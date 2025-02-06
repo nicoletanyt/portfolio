@@ -1,6 +1,15 @@
+/* App.jsx */
+.main {
+    overflow-y: scroll;
+    width: 100%;
+    height: 91vh;
+    padding: 2em;
+    padding-top: 0;
+}
+
 /* Homescreen.jsx */
 .homescreen {
-    height: 80vh;
+    height: 88vh;
     display: grid;
     grid-template-rows: auto 8% 8% auto;
 }
@@ -45,31 +54,33 @@
 }
 .menu-button {
     font-size: 2.5em;
-    background: none;
-    border: none;
-    outline: none;
-    color: var(--primary-colour);
-    justify-self: flex-end;
-}
-nav {
-    display: grid;
-    position: relative;
 }
 .nav-container {
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    top: -2em;
+    padding: 1em;
+    display: grid;
+    width: 100%;
+    justify-items: flex-end;
+    align-items: center;
+}  
+nav {
+    position: fixed;
+    top: -1em;
+    right: 2em;
+    z-index: 100;
     height: 58vh;
-    width: 50%;
-    background: var(--primary-colour);
+    width: 50vw;
+    background-color: var(--primary-colour);
+    backdrop-filter: none;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 3px) 82%, 0 100%, 0 0);
     display: grid;
     padding: 2em 0 6em 0;
-    
+
     transition: 0.6s ease-out;
 }
-/* .nav-container::before {
+/* nav::before {
     content: '';
     position: absolute;
     background: linear-gradient(180deg, rgba(204, 231, 254, 1) 0%, rgba(225, 241, 253, 1) 100%);
@@ -79,7 +90,7 @@ nav {
     left: 3px;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3px), calc(50% + 3px) 82%, 0 calc(100% - 3px), 0 0);
 } */
-.nav-container a {
+nav a {
     color: var(--main-colour);
     text-decoration: underline;
     text-underline-offset: .2em;
@@ -108,4 +119,10 @@ nav {
 }
 .menu-hide {
     transform: translateY(-58vh);
+}
+
+/* About Me */
+#about-me {
+    margin-top: 6vh;
+    height: 80vh;
 }

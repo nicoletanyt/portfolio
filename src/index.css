@@ -25,10 +25,12 @@ a {
 body {
   margin: 0;
   display: flex;
-  padding: 2em;
-  height: 100vh;
+  /* grid-template-rows: 10% 90%; */
+  /* padding: 2em; */
+  /* height: 100vh; */
   background: linear-gradient(180deg, rgba(204, 231, 254, 1) 0%, rgba(244, 249, 252, 1) 100%);
   min-width: 400px;
+  /* overflow: hidden; */
 }
 
 button {

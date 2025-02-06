@@ -7,15 +7,11 @@ function Nav() {
     const [showNav, setShowNav] = useState(false);
 
 	return (
-		<nav>
+		<div className="nav-container">
 			<button className="menu-button" onClick={() => setShowNav(true)}>
 				<IoMdMenu />
 			</button>
-			<div
-				className={"nav-container  ".concat(
-					showNav ? "menu-show" : "menu-hide"
-				)}
-			>
+			<nav className={showNav ? "menu-show" : "menu-hide"}>
 				<button className="close-btn" onClick={() => setShowNav(false)}>
 					<IoMdClose className="icon" />
 				</button>
@@ -23,8 +19,8 @@ function Nav() {
 				<a href="#projects">projects</a>
 				<a href="#achievements">achievements</a>
 				<a href="#involvement">involvement</a>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	);
 }
 
