@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import data from "./data.json"
+import { useEffect, useState } from 'react';
 import './App.css'
+import Homescreen from './components/Homescreen';
+import Nav from './components/Nav';
 
 function App() {
 
-
   return (
 		<div>
-			<img src={data.projects[0].image}/>
+			<Nav/>
+			<Homescreen />
 		</div>
 	);
 }

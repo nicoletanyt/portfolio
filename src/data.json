@@ -269,6 +269,86 @@
                 "events": ["Planning and execution of the 2022, 2023 SST Girls In Stem event"]
             }
         ]
+    },
+    "word-cloud": {
+        "adaptable": {
+            "size": 4,
+            "x": 69,
+            "y": 73,
+            "rotation": 0
+        },
+        "curious": {
+            "size": 3,
+            "x": 71,
+            "y": 31,
+            "rotation": 0
+        },
+        "independent": {
+            "size": 2,
+            "x": 116,
+            "y": 0,
+            "rotation": 0
+        },
+        "books": {
+            "size": 3,
+            "x": 204,
+            "y": 41,
+            "rotation": 0
+        },
+        "chess": {
+            "size": 1.8,
+            "x": 292,
+            "y": 62,
+            "rotation": -90
+        },
+        "music": {
+            "size": 3,
+            "x": 272,
+            "y": 110,
+            "rotation": -90
+        },
+        "committed": {
+            "size": 2.4,
+            "x": 155,
+            "y": 131,
+            "rotation": 0
+        },
+        "open-minded": {
+            "size": 1.8,
+            "x": 193,
+            "y": 166,
+            "rotation": 0
+        },
+        "vscode": {
+            "size": 2.4,
+            "x": 75,
+            "y": 169,
+            "rotation": 0
+        },
+        "coding": {
+            "size": 2.4,
+            "x": 40,
+            "y": 131,
+            "rotation": 0
+        },
+        "creative": {
+            "size": 2.4,
+            "x": -30,
+            "y": 99,
+            "rotation": 90
+        },
+        "guitar": {
+            "size": 1.8,
+            "x": 50,
+            "y": 68,
+            "rotation": 0
+        },
+        "coffee": {
+            "size": 1.8,
+            "x": 49,
+            "y": 10,
+            "rotation": 90
+        }
     }
 }
 
