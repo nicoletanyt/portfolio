@@ -349,6 +349,20 @@
             "y": 10,
             "rotation": 90
         }
-    }
+    },
+    "education": [
+        {
+            "year": 2015,
+            "school": "Pei Tong Primary School"
+        },
+        {
+            "year": 2021,
+            "school": "School of Science and Technology, Singapore"
+        },
+        {
+            "year": 2025,
+            "school": "Ngee Ann Polytechnic"
+        }
+    ]
 }
 

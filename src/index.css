@@ -22,6 +22,16 @@ a {
   color: var(--primary-colour);
 }
 
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.7em;
+  margin: 1.5em 0;
+}
+
 body {
   margin: 0;
   display: flex;

@@ -76,7 +76,7 @@ nav {
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 3px) 82%, 0 100%, 0 0);
     display: grid;
-    padding: 2em 0 6em 0;
+    padding: 2em 0 8em 0;
 
     transition: 0.6s ease-out;
 }
@@ -120,9 +120,64 @@ nav a {
 .menu-hide {
     transform: translateY(-58vh);
 }
+.menu-show a, .menu-show .close-btn {
+    align-content: center;
+}
 
 /* About Me */
 #about-me {
     margin-top: 6vh;
-    height: 80vh;
+}
+.profile-pic {
+    width: 55%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    position: relative;
+    display: block;
+}
+.img-wrapper {
+    position: relative;
+    margin: 3em 0;
+}
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1em;
+    display: block;
+    z-index: 1;
+    width: 22%;
+    height: 1.7em;
+    background-color: var(--accent-colour);
+    rotate: -40deg;
+}
+#about-me .description {
+    line-height: 2.4em;
+}
+.education-wrapper {
+    display: grid;
+    row-gap: 2em;
+    margin: 2em 0;
+}
+
+/* Card.jsx */
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 25% auto;
+    height: 6em;
+    border: 1px solid var(--primary-colour);
+}
+.card-wrapper .year {
+    background-color: var(--primary-colour);
+    color: var(--main-colour);
+    text-align: center;
+    font-weight: bold;
+}
+.card-wrapper .event {
+    padding-left: 1.5em;
+    line-height: 1.6em;
+}
+.card-wrapper p {
+    font-size: 1.1em;
+    margin: 0;
+    align-content: center;
 }
