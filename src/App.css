@@ -1,7 +1,7 @@
 /* App.jsx */
 .main {
     overflow-y: scroll;
-    width: 100%;
+    width: 100vw;
     height: 91vh;
     padding: 2em;
     padding-top: 0;
@@ -58,7 +58,7 @@
 .nav-container {
     padding: 1em;
     display: grid;
-    width: 100%;
+    width: 100vw;
     justify-items: flex-end;
     align-items: center;
 }  
@@ -125,7 +125,7 @@ nav a {
 }
 
 /* About Me */
-#about-me {
+#about-me, #projects {
     margin-top: 6vh;
 }
 .profile-pic {
@@ -180,4 +180,87 @@ nav a {
     font-size: 1.1em;
     margin: 0;
     align-content: center;
+}
+
+/* Projects.jsx */
+.project-wrapper {
+    margin: 3em 0;
+    display: grid;
+    row-gap: 3em;
+}
+.book {
+    position: relative;
+    width: 100%;
+    height: 28vh;
+    background-color: var(--accent-colour);
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+.book::before {
+    /* book binder */
+    content: '';
+    display: block;
+    width: 5%;
+    background-color: var(--primary-colour);
+    height: 100%;
+}
+.book .language {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--main-colour);
+    font-size: 1.3em;
+    padding: .3em .8em;
+    border-top-right-radius: 15px;
+    border: 3px dotted var(--primary-colour);
+    font-weight: 600;
+}
+.book img {
+    /* width: 60%; */
+    max-height: 120px;
+    max-width: 500px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.book .back, .book .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+}
+.book .front {
+    display: grid;
+    place-content: center;
+    padding: 1.5em;
+    height: 100%;
+    row-gap: 1.5em;
+}
+.book .back {
+    padding: 1em 2.5em;
+}
+.book .back p {
+    line-height: 1.5em;
+    width: 80%;
+}
+.project-name {
+    font-size: 1.8em;
+    margin: 0;
+    text-align: center;
+}
+.book .link {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.book-hide {
+    visibility: hidden;
+}
+.book-show {
+    visibility: visible;
+}
+.book .arrow-icon {
+    font-size: 2.5em;
+    position: absolute;
+    right: 5%;
+    bottom: 40%;
 }

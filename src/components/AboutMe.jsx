@@ -24,8 +24,8 @@ function AboutMe() {
       <h2>~ education</h2>
       <div className='education-wrapper'>
         {
-          data["education"].map((item) => (
-            <Card year={item.year} event={item.school}/>
+          data["education"].map((item, index) => (
+            <Card key={index} year={item.year} event={item.school}/>
           ))
         }
       </div>

@@ -3,7 +3,7 @@
         {
             "name": "SUSCITY",
             "language": ".js",
-            "description": "SUSCITY is an educational game developed by me and a few friends from school to help students visualise geography concepts. I gained collaboration skills and learned how to use GitHub in the context of coding with others.",
+            "description": "SUSCITY is an educational game developed by me and a few friends from school to help students visualise geography concepts through city-building and answering geography questions. ",
             "link": "https://sus-city.github.io/",
             "image": "src/assets/projects/suscity.png",
             "label": "Play SUSCITY"
@@ -11,7 +11,7 @@
         {
             "name": "PlaneMail",
             "language": ".swift",
-            "description": "Developed with a few friends from the Swift Accelerator Programme, PLANEMAIL is an email planner on the go to be clear and concise to prevent miscommunication. This experience honed my communication skills, as we had to communicate to avoid merge conflicts in the same file.",
+            "description": "Developed with a few friends from the Swift Accelerator Programme, PlaneMail is an email planner on the go to be clear and concise to prevent miscommunication. Supports both English and Chinese.",
             "link": "https://apps.apple.com/us/app/planemail/id6444731917",
             "image": "src/assets/projects/planemail.png",
             "label": "Download PlaneMail"
@@ -19,7 +19,7 @@
         {
             "name": "Sound Seat Ticketing",
             "language": ".py",
-            "description": "Sound Seat Ticketing is a voice-controlled automated movie ticket booking bot developed by me and my friends. It was designed with the visually and motor impaired in mind as well as those seeking greater convenience when booking their tickets. It targets the popular movie booking site, Cathay Cineplexes, and uses automation libraries in Python to book the tickets automatically.",
+            "description": "Sound Seat Ticketing is a voice-controlled automated movie ticket booking bot for Cathay Cineplexes. It is designed for visually/motor impaired for convenience and efficiency.",
             "link": "https://github.com/lukeskywalker22/sound_seat_ticketing/tree/main",
             "image": "src/assets/projects/sound-seat-ticketing.png",
             "label": "View the Github"
@@ -27,7 +27,7 @@
         {
             "name": "SSTea",
             "language": ".js",
-            "description": "SSTea is an online tower defence game I developed for FLL 2024 to promote the hobby of gardening. It allowed me apply the concepts I had learnt in game development, such as trigonometry for the rotation of the towers. The game is only available on mobile browsers (Google/Brave is recommended)",
+            "description": "SSTea is an online tower defence game aimed to promote gardening. Available on mobile browsers (Google/Brave is recommended)",
             "link": "https://nicoletanyt.github.io/SSTea/",
             "image": "src/assets/projects/sstea.png",
             "label": "Check out SSTea"
@@ -35,7 +35,7 @@
         {
             "name": "Graphs in Obsidian Plugin",
             "language": ".react",
-            "description": "I developed a plugin for the note-taking app, Obsidian, to plot graphs and vectors for better visualisation in your notes.",
+            "description": "I developed a plugin for the note-taking app, Obsidian, to plot graphs and vectors for better visualisation in your Math or Physics notes.",
             "link": "https://github.com/nicoletanyt/obsidian-plugin-graphs",
             "image": "src/assets/projects/graphs-plugin.png",
             "label": "Check out the plugin"
