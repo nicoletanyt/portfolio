@@ -15,10 +15,18 @@ function Nav() {
 				<button className="close-btn" onClick={() => setShowNav(false)}>
 					<IoMdClose className="icon" />
 				</button>
-				<a href="#about-me">about me</a>
-				<a href="#projects">projects</a>
-				<a href="#achievements">achievements</a>
-				<a href="#involvement">involvement</a>
+				<a href="#about-me" onClick={() => setShowNav(false)}>
+					about me
+				</a>
+				<a href="#projects" onClick={() => setShowNav(false)}>
+					projects
+				</a>
+				<a href="#achievements" onClick={() => setShowNav(false)}>
+					achievements
+				</a>
+				<a href="#involvement" onClick={() => setShowNav(false)}>
+					involvement
+				</a>
 			</nav>
 		</div>
 	);
