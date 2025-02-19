@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import data from "../data.json";
 
 function AchievementSection({ header, category }) {
 
 	const initialValue = data.achievements[header];
 	const [items, setItems] = useState(initialValue);
+
+	const sectionBody = useRef(null)
+	const [sticky, setSticky] = useState(false)
 
 	useEffect(() => {
 		if (category == "") {
@@ -14,9 +17,20 @@ function AchievementSection({ header, category }) {
 		}
 	}, [category])
 
+	useEffect(() => {
+		if (sectionBody) {
+			setSticky(sectionBody.current.clientHeight > 500)
+		}
+	}, [])
+	
+
 	if (items.length > 0) return (
-		<div className="section">
-			<h2 className="achievement-header">{header}</h2>
+		<div className="section" ref={sectionBody}>
+			<h2
+				className={"achievement-header ".concat(sticky && "scroll-sticky")}
+			>
+				{header}
+			</h2>
 			<hr className="divider" />
 			<ul>
 				{items.map(
@@ -32,7 +46,6 @@ function AchievementSection({ header, category }) {
 										</a>
 									)}
 								</p>
-								{/* <p>{item.category}</p> */}
 							</li>
 						)
 				)}

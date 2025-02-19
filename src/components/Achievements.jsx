@@ -10,10 +10,6 @@ function Achievements() {
 
   const [category, setCategory] = useState("")
 
-  useEffect(() => {
-	console.log(category)
-  }, [category])
-
   const filters = [
 		{
 			icon: <IoCodeSlash />,
