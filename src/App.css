@@ -125,9 +125,6 @@ nav a {
 }
 
 /* About Me */
-#about-me, #projects {
-    margin-top: 6vh;
-}
 .profile-pic {
     width: 55%;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
@@ -209,7 +206,7 @@ nav a {
     right: 0;
     top: 0;
     background-color: var(--main-colour);
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: .3em .8em;
     border-top-right-radius: 15px;
     border: 3px dotted var(--primary-colour);
@@ -217,8 +214,8 @@ nav a {
 }
 .book img {
     /* width: 60%; */
-    max-height: 120px;
-    max-width: 500px;
+    max-height: 140px;
+    max-width: 230px;
     object-fit: contain;
     margin: 0 auto;
 }
@@ -244,7 +241,7 @@ nav a {
     width: 80%;
 }
 .project-name {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 0;
     text-align: center;
 }
@@ -263,4 +260,57 @@ nav a {
     position: absolute;
     right: 5%;
     bottom: 40%;
+}
+
+/* achievement.jsx */
+.achievement-header {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: auto 0;
+    width: 15%;
+}
+.divider {
+    border: 1.5px solid var(--primary-colour);
+    margin: 12% 1.5em;
+}
+.section-wrapper {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.section-wrapper p {
+    line-height: 2em;
+}
+.section-wrapper ul {
+    padding: 0 0 0 2em;
+}
+.achievement-item a {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.filter-wrapper {
+    display: flex;
+    margin-top: 2em;
+}
+.filter-scroll {
+    overflow: scroll;
+    display: flex;
+}
+.filter-button {
+    display: flex;
+    align-items: center;
+    padding: 0 .5em;
+    margin: 0 .5em;
+    border-radius: 5px;
+    background-color: var(--accent-colour);
+}
+.selected {
+    background-color: var(--main-colour);
+    border: 1px solid var(--primary-colour);
+}
+.filter-button p {
+    margin-left: .5em;
+}
+.filter-label {
+    margin: auto 1em auto 0;
 }

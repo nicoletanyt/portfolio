@@ -28,7 +28,7 @@ function Book({project}) {
 				)}
 			>
 				<p>{project.description}</p>
-				<a className="link" href={project.link}>
+				<a target='_blank' className="link" href={project.link}>
 					{project.label}
 				</a>
 			</div>

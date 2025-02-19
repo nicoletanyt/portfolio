@@ -42,190 +42,206 @@
         }
     ],
     "achievements": {
-        "science": {
-            "2022": [
-                {
-                    "name": "Opportunity X Science Competition: 3rd Place",
-                    "link": "https://sites.google.com/s2021.ssts.edu.sg/issgroupa202/home",
-                    "label": "View my project"
-                },
-                {
-                    "name": "INTOC Physics & Engineering Competition: Bronze",
-                    "link": "https://sites.google.com/s2021.ssts.edu.sg/issgroupa202/home",
-                    "label": "View my project"
-                },
-                {
-                    "name": "Singapore Science and Engineering Fair (SSEF) 2023",
-                    "link": "https://sites.google.com/s2021.ssts.edu.sg/issgroupa202/home",
-                    "label": "View my project"
-                }
-            ]
-        },
-        "math": {
-            "2023": [
-                {
-                    "name": "Singapore & Asian Schools Math Olympiad (SASMO) 2023: Bronze"
-                },
-                {
-                    "name": "Australian Mathematics Competition (AMC) 2023: Credit"
-                }
-            ],
-            "2024": [
-                {
-                    "name": "Singapore & Asian Schools Math Olympiad (SASMO) 2024"
-                },
-                {
-                    "name": "Australian Mathematics Competition (AMC) 2024: Proficiency"
-                }
-            ]
-        },
-        "coding": {
-            "2022": [
-                { 
-                    "name": "Computational & Algorithmic Thinking (CAT) 2022: Top 39%"
-                },
-                { 
-                    "name": "Oxford University Computing Challenge (OUCC) 2022"
-                },
-                {
-                    "name": "BEBRAS Computational Thinking Challenge: Honorable Mention"
-                },
-                {
-                    "name": "SST Inc. Application of the Year 1st Runner-up - SUSCITY",
-                    "link": "https://sus-city.github.io",
-                    "label": "View my project"
-                },
-                {
-                    "name": "SST Innofest Award Honorable Mention"
-                }
-            ],
-            "2023": [
-                {
-                    "name": "National Olympiad in Informatics (NOI) 2023 Qualifiers"
-                },
-                {
-                    "name": "Graduated from Swift Accelerator Programme (SAP) Class of 2022"
-                },
-                {
-                    "name": "Attended 2023 Developer Week in Oakland Convention Center"
-                },
-                {
-                    "name": "App Development (Associate) Certificate for Swift"
-                },
-                {
-                    "name": "AI4I® - Literacy in AI Course"
-                },
-                {
-                    "name": "Australian Informatics Olympiad (AIO) 2023: Bronze"
-                },
-                {
-                    "name": "Splash Awards 2023: Participation"
-                },
-                {
-                    "name": "Perse Coding Team Challenge (Round 1): Merit"
-                },
-                {
-                    "name": "SST Inc. Application of the Year 2nd Runner-up - SUSCITY",
-                    "link": "https://sus-city.github.io",
-                    "label": "View my project"
-                }
-            ],
-            "2024": [
-                {
-                    "name": "Perse Coding Team Challenge (Round 1 & 2): Distinction"
-                },
-                {
-                    "name": "Introduction to Computational Thinking and Problem Solving Final Contest by NUS SoC: Distinction"
-                },
-                {
-                    "name": "National Olympiad in Informatics (NOI) 2024 Finals: Bronze"
-                },
-                {
-                    "name": "Represented Singapore at iDEX 2024 organised by ACS(I)",
-                    "link": "https://github.com/lukeskywalker22/sound_seat_ticketing/tree/main",
-                    "label": "View my project"
-                },
-                {
-                    "name": "Australian Informatics Olympiad (AIO) 2024: Bronze"
-                }
-            ]
-        },
-        "robotics": {
-            "2021": [
-                {
-                    "name": "World Robot Olympiad (WRO) 2021 Regular: Judges Award"
-                },
-                {
-                    "name": "Innovation, Design and Engineering (IDE) Robotics 2021"
-                },
-                {
-                    "name": "First Lego League (FLL) 2021 (Cargo Connect)"
-                }
-            ],
-            "2022": [
-                {
-                    "name": "First Lego League (FLL) 2022 - 2023 (Super Powered)"
-                }
-            ],
-            "2023": [
-                {
-                    "name": "World Robot Olympiad (WRO) Singapore 2023 - RoboSports"
-                },
-                {
-                    "name": "First Lego League (FLL) 2023 - 2024 (Masterpiece)"
-                }
-            ]
-        },
-        "academic": {
-            "2023": [
-                {
-                    "name": "2023 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 3)"
-                }
-            ],
-            "2022": [
-                {
-                    "name": "2022 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 2)"
-                }
-            ],
-            "2021": [
+        "2024": [
             {
-                "name": "2021 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 1)"
-            }
-            ],
-            "2020": [
+                "name": "Singapore & Asian Schools Math Olympiad (SASMO) 2024",
+                "category": "math"
+            },
             {
-                "name": "Edusave Scholarship 2020 (Primary 6)"
+                "name": "Australian Mathematics Competition (AMC) 2024: Proficiency",
+                "category": "math"
+            },
+            {
+                "name": "Perse Coding Team Challenge (Round 1 & 2): Distinction",
+                "category": "coding"
+            },
+            {
+                "name": "Introduction to Computational Thinking and Problem Solving Final Contest by NUS SoC: Distinction",
+                "category": "coding"
+            },
+            {
+                "name": "National Olympiad in Informatics (NOI) 2024 Finals: Bronze",
+                "category": "coding"
+            },
+            {
+                "name": "Represented Singapore at iDEX 2024 organised by ACS(I)",
+                "category": "coding",
+                "link": "https://github.com/lukeskywalker22/sound_seat_ticketing/tree/main",
+                "label": "View my project"
+            },
+            {
+                "name": "Australian Informatics Olympiad (AIO) 2024: Bronze",
+                "category": "coding"
             }
-            ],
-            "2019": [
-                {
-                    "name": "Edusave Scholarship 2019 (Primary 5)"
-                }, 
-                {
-                    "name": "Edusave Award for Achievement, Good Leadership and Service (EAGLES) 2019"
-                }
-            ],
-            "2018": [
-                {
-                    "name": "Edusave Scholarship 2018 (Primary 4)"
-                }
-            ],
-            "2017": [
-                {
-                    "name": "Edusave Scholarship 2017 (Primary 3)"
-                }
-            ],
-            "2016": [
-                {
-                    "name": "Edusave Scholarship 2016 (Primary 2)"
-                }
-            ],
-            "2015": [
-                {
-                    "name": "Edusave Scholarship 2015 (Primary 1)"
-                }
-            ]
-        }
+        ],
+        "2023": [
+            {
+                "name": "Singapore & Asian Schools Math Olympiad (SASMO) 2023: Bronze",
+                "category": "math"
+            },
+            {
+                "name": "Australian Mathematics Competition (AMC) 2023: Credit",
+                "category": "math"
+            },
+            {
+                "name": "National Olympiad in Informatics (NOI) 2023 Qualifiers",
+                "category": "coding"
+            },
+            {
+                "name": "Graduated from Swift Accelerator Programme (SAP) Class of 2022",
+                "category": "coding"
+            },
+            {
+                "name": "Attended 2023 Developer Week in Oakland Convention Center",
+                "category": "coding"
+            },
+            {
+                "name": "App Development (Associate) Certificate for Swift",
+                "category": "coding"
+            },
+            {
+                "name": "AI4I® - Literacy in AI Course",
+                "category": "coding"
+            },
+            {
+                "name": "Australian Informatics Olympiad (AIO) 2023: Bronze",
+                "category": "coding"
+            },
+            {
+                "name": "Splash Awards 2023: Participation",
+                "category": "coding"
+            },
+            {
+                "name": "Perse Coding Team Challenge (Round 1): Merit",
+                "category": "coding"
+            },
+            {
+                "name": "SST Inc. Application of the Year 2nd Runner-up - SUSCITY",
+                "category": "coding",
+                "link": "https://sus-city.github.io",
+                "label": "View my project"
+            },
+            {
+                "name": "World Robot Olympiad (WRO) Singapore 2023 - RoboSports",
+                "category": "robotics"
+            },
+            {
+                "name": "First Lego League (FLL) 2023 - 2024 (Masterpiece)",
+                "category": "robotics"
+            },
+            {
+                "name": "2023 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 3)",
+                "category": "academic"
+            }
+        ],
+        "2022": [
+            {
+                "name": "Opportunity X Science Competition: 3rd Place",
+                "link": "https://sites.google.com/s2021.ssts.edu.sg/issgroupa202/home",
+                "label": "View my project",
+                "category": "science"
+            },
+            {
+                "name": "INTOC Physics & Engineering Competition: Bronze",
+                "link": "https://sites.google.com/s2021.ssts.edu.sg/issgroupa202/home",
+                "label": "View my project",
+                "category": "science"
+            },
+            {
+                "name": "Singapore Science and Engineering Fair (SSEF) 2023",
+                "link": "https://sites.google.com/s2021.ssts.edu.sg/issgroupa202/home",
+                "label": "View my project",
+                "category": "science"
+            },
+            { 
+                "name": "Computational & Algorithmic Thinking (CAT) 2022: Top 39%",
+                "category": "coding"
+            },
+            { 
+                "name": "Oxford University Computing Challenge (OUCC) 2022",
+                "category": "coding"
+            },
+            {
+                "name": "BEBRAS Computational Thinking Challenge: Honorable Mention",
+                "category": "coding"
+            },
+            {
+                "name": "SST Inc. Application of the Year 1st Runner-up - SUSCITY",
+                "category": "coding",
+                "link": "https://sus-city.github.io",
+                "label": "View my project"
+            },
+            {
+                "name": "SST Innofest Award Honorable Mention",
+                "category": "coding"
+            },
+            {
+                "name": "First Lego League (FLL) 2022 - 2023 (Super Powered)",
+                "category": "robotics"
+            },
+            {
+                "name": "2022 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 2)",
+                "category": "academic"
+            }
+        ],
+        "2021": [
+            {
+                "name": "World Robot Olympiad (WRO) 2021 Regular: Judges Award",
+                "category": "robotics"
+            },
+            {
+                "name": "Innovation, Design and Engineering (IDE) Robotics 2021",
+                "category": "robotics"
+            },
+            {
+                "name": "First Lego League (FLL) 2021 (Cargo Connect)",
+                "category": "robotics"
+            },
+            {
+                "name": "2021 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 1)",
+                "category": "academic"
+            }
+        ],
+        "2020": [
+            {
+                "name": "Edusave Scholarship 2020 (Primary 6)",
+                "category": "academic"
+            }
+        ],
+        "2019": [
+            {
+                "name": "Edusave Scholarship 2019 (Primary 5)",
+                "category": "academic"
+            }, 
+            {
+                "name": "Edusave Award for Achievement, Good Leadership and Service (EAGLES) 2019",
+                "category": "academic"
+            }
+        ],
+        "2018": [
+            {
+                "name": "Edusave Scholarship 2018 (Primary 4)",
+                "category": "academic"
+            }
+        ],
+        "2017": [
+            {
+                "name": "Edusave Scholarship 2017 (Primary 3)",
+                "category": "academic"
+            }
+        ],
+        "2016": [
+            {
+                "name": "Edusave Scholarship 2016 (Primary 2)",
+                "category": "academic"
+            }
+        ],
+        "2015": [
+            {
+                "name": "Edusave Scholarship 2015 (Primary 1)",
+                "category": "academic"
+            }
+        ]
     },
     "involvement": {
         "leadership": [
