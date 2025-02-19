@@ -274,13 +274,16 @@ nav a {
     margin: 12% 1.5em;
 }
 .section-wrapper {
-    display: flex;
-    margin-bottom: 1.5em;
+    display: grid;
+    row-gap: 1em;
 }
-.section-wrapper p {
+.section {
+    display: flex;
+}
+.section p {
     line-height: 2em;
 }
-.section-wrapper ul {
+.section ul {
     padding: 0 0 0 2em;
 }
 .achievement-item a {
@@ -290,7 +293,7 @@ nav a {
 }
 .filter-wrapper {
     display: flex;
-    margin-top: 2em;
+    margin: 2em 0 1em 0;
 }
 .filter-scroll {
     overflow: scroll;
@@ -299,17 +302,17 @@ nav a {
 .filter-button {
     display: flex;
     align-items: center;
-    padding: 0 .5em;
+    padding: .8em;
     margin: 0 .5em;
     border-radius: 5px;
     background-color: var(--accent-colour);
 }
 .selected {
     background-color: var(--main-colour);
-    border: 1px solid var(--primary-colour);
+    border: 1.5px solid var(--primary-colour);
 }
 .filter-button p {
-    margin-left: .5em;
+    margin: 0 0 0 .5em
 }
 .filter-label {
     margin: auto 1em auto 0;
