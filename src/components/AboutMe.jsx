@@ -20,6 +20,7 @@ function AboutMe() {
 					and creating apps that benefit the community!
 				</p>
 			</div>
+			<a className='contact-nav' href="#contact-me">Drop me a message!</a>
 			<h2>~ education</h2>
 			<div className="card-container">
 				{data["education"].map((item, index) => (

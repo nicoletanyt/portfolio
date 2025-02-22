@@ -16,6 +16,7 @@
 .homescreen p {
     margin: 0;
     margin-top: .7em;
+    font-size: 1.2em;
 }
 .name {
     font-weight: 400;
@@ -154,6 +155,11 @@ nav a {
     display: grid;
     row-gap: 2em;
     margin: 2em 0;
+}
+.contact-nav {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* Card.jsx */
@@ -326,4 +332,55 @@ nav a {
 }
 .multiline .name {
     font-size: 1em;
+}
+
+/* Contact Me */
+#contact-me {
+    height: 90vh;
+}
+label, input {
+    display: block;
+}
+label {
+    margin: 2em 0;
+    font-size: 1.1em;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary-colour);
+    background: none;
+    font-size: 1em;
+    margin-top: .8em;
+    padding-bottom: 0.3em;
+    color: var(--primary-colour);
+}
+#email, #message {
+    width: 100%;
+}
+#submit-btn {
+    padding: 0.8em 2.5em;
+    background-color: var(--primary-colour);
+    color: var(--main-colour);
+    border: none;
+    border-radius: 10px;
+    font-family: "Instrument Sans", serif;
+    display: unset;
+    font-size: 1.1em;
+}
+.bottom-wrapper {
+    display: flex;
+    /* margin-top: 1em; */
+    justify-content: space-between;
+}
+.socials-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1.5em;
+}
+.social-icon {
+    font-size: 2.5em;
+}
+.email-text {
+    margin-top: 3em;
 }
