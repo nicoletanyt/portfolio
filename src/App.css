@@ -150,7 +150,7 @@ nav a {
 #about-me .description {
     line-height: 2.4em;
 }
-.education-wrapper {
+.card-container {
     display: grid;
     row-gap: 2em;
     margin: 2em 0;
@@ -160,25 +160,21 @@ nav a {
 .card-wrapper {
     display: grid;
     grid-template-columns: 25% auto;
-    height: 6em;
     border: 1px solid var(--primary-colour);
+}
+.event.single {
+    padding: 1.5em;
+    line-height: 2em;
 }
 .card-wrapper .year {
     background-color: var(--primary-colour);
     color: var(--main-colour);
     text-align: center;
     font-weight: bold;
-}
-.card-wrapper .event {
-    padding-left: 1.5em;
-    line-height: 1.6em;
-}
-.card-wrapper p {
     font-size: 1.1em;
     margin: 0;
     align-content: center;
 }
-
 /* Projects.jsx */
 .project-wrapper {
     margin: 3em 0;
@@ -321,4 +317,13 @@ nav a {
 }
 .filter-label {
     margin: auto 1em auto 0;
+}
+
+/* Involvement.jsx */
+.multiline {
+    line-height: 2em;
+    padding: .8em;
+}
+.multiline .name {
+    font-size: 1em;
 }

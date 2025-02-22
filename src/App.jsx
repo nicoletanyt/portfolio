@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
+import Involvement from './components/Involvement';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
 				<AboutMe/>
 				<Projects/>
 				<Achievements/>
+				<Involvement/>
 			</div>
 		</>
 	);
