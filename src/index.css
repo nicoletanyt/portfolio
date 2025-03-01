@@ -45,7 +45,7 @@ body {
   /* height: 100vh; */
   background: linear-gradient(180deg, rgba(204, 231, 254, 1) 0%, rgba(244, 249, 252, 1) 100%);
   min-width: 400px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 button {

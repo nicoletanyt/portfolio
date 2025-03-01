@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 function App() {
 
   return (
-		<>
+		<div>
 			<Nav/>
 			<div className='main'>
 				<Homescreen/>
@@ -21,7 +21,7 @@ function App() {
 				<Involvement/>
 				<Contact/>
 			</div>
-		</>
+		</div>
 	);
 }
 

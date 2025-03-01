@@ -1,22 +1,23 @@
 /* App.jsx */
 .main {
     overflow-y: scroll;
-    width: 100vw;
+    overflow-x: hidden;
     height: 91vh;
+    width: 100vw;
     padding: 2em;
     padding-top: 0;
 }
 
 /* Homescreen.jsx */
 .homescreen {
-    height: 88vh;
+    height: 90%;
     display: grid;
     grid-template-rows: auto 8% 8% auto;
 }
 .homescreen p {
     margin: 0;
     margin-top: .7em;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }
 .name {
     font-weight: 400;
@@ -53,7 +54,7 @@
     /* border: 2px solid black; */
     height: 40vh;
     width: 100%;
-    margin-top: 3em;
+    margin: 1.5em 0;
     max-width: 390px;
 }
 .word {
@@ -61,12 +62,11 @@
     margin-bottom: 0;
 }
 .menu-button {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 .nav-container {
-    padding: 1em;
+    padding-top: .8em;
     display: grid;
-    width: 100vw;
     justify-items: flex-end;
     align-items: center;
 }  
@@ -114,10 +114,11 @@ nav a {
     justify-self: center;
 }
 .down-icon {
-    font-size: 2.8em;
+    font-size: 2.5em;
     align-self: flex-end;
     justify-self: center;
-    --animate-duration: 1.6s
+    --animate-duration: 1.6s;
+    margin-top: 1em
 }
 .menu-show {
     transform: translateY(0);
