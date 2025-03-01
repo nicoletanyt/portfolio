@@ -78,9 +78,6 @@ nav {
     height: 58vh;
     width: 50vw;
     background-color: var(--primary-colour);
-    backdrop-filter: none;
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 3px) 82%, 0 100%, 0 0);
     display: grid;
@@ -330,6 +327,24 @@ nav a {
 }
 .filter-label {
     margin: auto 1em auto 0;
+}
+.up-button {
+    position: absolute;
+    bottom: 3.5em;
+    right: 0;
+    font-size: 1.5em;
+    background-color: var(--primary-colour);
+    color: var(--main-colour);
+    /* width: 1.4em;
+    height: 1.4em; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: .2em;
+    display: grid;
+    place-content: center;
+}
+.animate__animated.animate__slideInRight {
+    --animate-duration: .5s;
 }
 
 /* Involvement.jsx */

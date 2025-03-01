@@ -17,6 +17,11 @@
   color: var(--primary-colour);
 }
 
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-colour);

@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import data from "../data.json"
 import AchievementSection from "./AchievementSection";
 import { IoCodeSlash, IoBook } from "react-icons/io5";
 import { MdScience } from "react-icons/md";
 import { TbMath } from "react-icons/tb";
 import FilterButton from './FilterButton';
+import UpButton from './UpButton';
+import useIsVisible from '../hooks/useIsVisible';
 
 function Achievements() {
 
   const [category, setCategory] = useState("")
+  // up button visibility
+  const [visible, setVisible] = useState(false) 
+
+  const achievementWrapper = useRef()
+  const inView = useIsVisible(achievementWrapper)
 
   const filters = [
 		{
@@ -29,6 +36,19 @@ function Achievements() {
     }
 	];
 
+	const handleScroll = () => {
+		if (inView) {
+			const rect = achievementWrapper.current.getBoundingClientRect();	 
+			setVisible(rect.top < 0 && (rect.bottom >= screen.height));
+		} else {
+			setVisible(false)
+		}
+	}
+
+	useEffect(() => {
+		document.querySelector(".main").addEventListener("scroll", handleScroll)
+	}, [inView])
+
   return (
 		<div id="achievements">
 			<h1>achievements</h1>
@@ -46,16 +66,17 @@ function Achievements() {
 					))}
 				</div>
 			</div>
-			<div className='section-wrapper'>
-			{/* sorts so that latest is shown first */}
-			{Object.keys(data.achievements)
-				.sort(function (a, b) {
-					return Number(b) - Number(a);
-				})
-				.map((year, key) => (
-					<AchievementSection key={key} header={year} category={category} />
-				))}
+			<div className="section-wrapper" ref={achievementWrapper}>
+				{/* sorts so that latest is shown first */}
+				{Object.keys(data.achievements)
+					.sort(function (a, b) {
+						return Number(b) - Number(a);
+					})
+					.map((year, key) => (
+						<AchievementSection key={key} header={year} category={category} />
+					))}
 			</div>
+			<UpButton heading={"#achievements"} visible={visible} />
 		</div>
 	);
 }
