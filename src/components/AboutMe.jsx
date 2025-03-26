@@ -6,7 +6,7 @@ function AboutMe() {
   return (
 		<div id="about-me">
 			<h1>about me</h1>
-			<div>
+			<div className='about-me-wrapper'>
 				<div className="img-wrapper">
 					<img className="profile-pic" src={"src/assets/about-me.jpeg"} />
 				</div>
@@ -18,9 +18,10 @@ function AboutMe() {
 					lover. I am always eager to learn new things and tackle challenges.
 					<br />I aspire to continue exploring different aspects of technology
 					and creating apps that benefit the community!
+					<br/>
+					<a className='contact-nav' href="#contact-me">Drop me a message!</a>
 				</p>
 			</div>
-			<a className='contact-nav' href="#contact-me">Drop me a message!</a>
 			<h2>~ education</h2>
 			<div className="card-container">
 				{data["education"].map((item, index) => (

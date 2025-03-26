@@ -12,21 +12,23 @@ function Nav() {
 				<IoMdMenu />
 			</button>
 			<nav className={showNav ? "menu-show" : "menu-hide"}>
-				<button className="close-btn" onClick={() => setShowNav(false)}>
-					<IoMdClose className="icon" />
-				</button>
-				<a href="#about-me" onClick={() => setShowNav(false)}>
-					about me
-				</a>
-				<a href="#projects" onClick={() => setShowNav(false)}>
-					projects
-				</a>
-				<a href="#achievements" onClick={() => setShowNav(false)}>
-					achievements
-				</a>
-				<a href="#involvement" onClick={() => setShowNav(false)}>
-					involvement
-				</a>
+				<div className='nav-link-wrapper'>
+					<button className="close-btn" onClick={() => setShowNav(false)}>
+						<IoMdClose className="icon" />
+					</button>
+					<a href="#about-me" onClick={() => setShowNav(false)}>
+						about me
+					</a>
+					<a href="#projects" onClick={() => setShowNav(false)}>
+						projects
+					</a>
+					<a href="#achievements" onClick={() => setShowNav(false)}>
+						achievements
+					</a>
+					<a href="#involvement" onClick={() => setShowNav(false)}>
+						involvement
+					</a>
+				</div>
 			</nav>
 		</div>
 	);

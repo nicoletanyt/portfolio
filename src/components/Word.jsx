@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Word({word, text}) {
-
+function Word({word, text, scale}) {
+  
     const style = {
-        fontSize: word.size * 10,
-        left: "calc(" + word.x + "*.3%)",
-        top: word.y * 1.5,
+        fontSize: `${(word.size / scale)}em`,
+        left: `${word.x * scale}px`,
+        top: `${word.y * scale}px`,
         rotate: word.rotation + "deg",
     };
 

@@ -2,17 +2,19 @@
 .main {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 91vh;
+    height: 100vh;
     width: 100vw;
     padding: 2em;
     padding-top: 0;
+    min-width: 520px;
 }
 
 /* Homescreen.jsx */
 .homescreen {
-    height: 90%;
+    height: calc(100vh - 2em);
     display: grid;
-    grid-template-rows: auto 8% 8% auto;
+    place-content: center;
+    /* grid-template-rows: auto 8% 8% auto; */
 }
 .homescreen p {
     margin: 0;
@@ -22,8 +24,6 @@
 .name {
     font-weight: 400;
     font-size: 2em;
-    margin: 0;
-    height: fit-content;
 }
 .name .italic {
     font-style: italic;
@@ -54,8 +54,9 @@
     /* border: 2px solid black; */
     height: 40vh;
     width: 100%;
-    margin: 1.5em 0;
     max-width: 390px;
+    min-width: 350px;
+    min-height: 320px;
 }
 .word {
     position: absolute;
@@ -65,6 +66,7 @@
     font-size: 2em;
 }
 .nav-container {
+    padding: 0 2em;
     padding-top: .8em;
     display: grid;
     justify-items: flex-end;
@@ -72,29 +74,23 @@
 }  
 nav {
     position: fixed;
-    top: -1em;
+    top: 0;
     right: 2em;
     z-index: 100;
     height: 58vh;
-    width: 50vw;
+    min-height: 500px;
+    width: 40vw;
     background-color: var(--primary-colour);
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 3px) 82%, 0 100%, 0 0);
-    display: grid;
-    padding: 2em 0 8em 0;
-
     transition: 0.6s ease-out;
 }
-/* nav::before {
-    content: '';
-    position: absolute;
-    background: linear-gradient(180deg, rgba(204, 231, 254, 1) 0%, rgba(225, 241, 253, 1) 100%);
-    width: calc(100% - 3px * 2);
-    height: calc(100% - 6px);
-    top: 0;
-    left: 3px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3px), calc(50% + 3px) 82%, 0 calc(100% - 3px), 0 0);
-} */
+.nav-link-wrapper {
+    display: grid;
+    /* gap: auto; */
+    margin-top: 1em;
+    height: 70%;
+}
 nav a {
     color: var(--main-colour);
     text-decoration: underline;
@@ -106,28 +102,23 @@ nav a {
 .close-btn {
     color: var(--main-colour);
     z-index: 2;
-    display: grid;
+    cursor: pointer;
 }
 .close-btn .icon {
     font-size: 2.5em;
-    align-self: flex-start;
-    justify-self: center;
 }
 .down-icon {
     font-size: 2.5em;
-    align-self: flex-end;
-    justify-self: center;
     --animate-duration: 1.6s;
-    margin-top: 1em
+    margin: 0 auto;
+    margin-top: 1.5em;
+    display: block;
 }
 .menu-show {
     transform: translateY(0);
 }
 .menu-hide {
     transform: translateY(-58vh);
-}
-.menu-show a, .menu-show .close-btn {
-    align-content: center;
 }
 
 /* About Me */
@@ -267,6 +258,7 @@ nav a {
     position: absolute;
     right: 5%;
     bottom: 40%;
+    cursor: pointer;
 }
 
 /* achievement.jsx */
@@ -274,7 +266,7 @@ nav a {
     font-size: 1.5em;
     font-weight: 400;
     margin: auto 0;
-    width: 15%;
+    min-width: 10%;
     max-height: 90%;
 }
 .scroll-sticky {
@@ -283,7 +275,7 @@ nav a {
 }
 .divider {
     border: 1.5px solid var(--primary-colour);
-    margin: 12% 1.5em;
+    margin: 1.5em 1.5em;
 }
 .section-wrapper {
     display: grid;
@@ -318,6 +310,7 @@ nav a {
     margin: 0 .5em;
     border-radius: 5px;
     background-color: var(--accent-colour);
+    cursor: pointer;
 }
 .selected {
     background-color: var(--main-colour);
@@ -406,4 +399,134 @@ input[type="text"] {
 }
 .email-text {
     margin-top: 3em;
+}
+
+/* Media Queries */
+/* Tablet */
+@media only screen and (min-width: 760px) {
+    .about-me-wrapper {
+        display: flex;
+    }
+    .img-wrapper {
+        flex: 55%;
+        margin-right: 2em;
+    }
+    .img-wrapper .profile-pic {
+        width: 100%;
+    }
+
+    .book .back {
+        padding: 1em 4em;
+    }
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2em;
+    }
+    .book {
+        height: 50vh;
+    }
+    .book img {
+        max-width: 200px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+    .main {
+        padding: 2em 5em;
+        padding-right: calc(10em + 20vw);
+    }
+    .homescreen {
+        place-content: unset;
+    }   
+    .word-cloud {
+        margin: auto 0;
+    }
+    .menu-button {
+        visibility: hidden;
+    }
+    .nav-container {
+        height: 0;
+        padding: 0;
+    }
+    nav {
+        height: 80%;
+        margin-right: 5em;
+        transition: none;
+        width: fit-content;
+        gap: .5em;
+        max-height: 600px;
+    }
+    .nav-link-wrapper {
+        margin-top: 2em;
+    }
+    .close-btn {
+        display: none;
+    }
+    nav a {
+        padding: 1.5em 2em;
+    }
+    .menu-hide {
+        transform: none;
+    }
+    .project-wrapper {
+        grid-template-columns: unset; 
+    }
+    .book {
+        height: 35vh;
+    } 
+    .book img {
+        max-width: 350px;
+    }
+    .up-button {
+        bottom: 2.5em;
+    }
+    .filter-scroll {
+        overflow: unset;
+    }
+    .homescreen {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    :root {
+        font-size: 20px;
+    }
+    .main {
+        padding: 2em 7em;
+        padding-right: calc(10em + 20vw);
+    }
+    nav {
+        /* width: 13%; */
+        max-height: 700px;
+    }
+    .word-cloud {
+        max-width: 500px;
+        font-size: 25px;
+        margin: 2em 0;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, calc((100% - 2em)/2));
+        column-gap: 2em;
+    }
+    .project-wrapper {
+        grid-template-columns: repeat(2, auto);;
+    }
+    .event.single {
+        margin: auto 0;
+    }
+    .img-wrapper {
+        margin-right: 4em;
+    }
+    .description {
+        text-align: justify;
+    }
+    .span-two {
+        grid-column: span 2;
+    }
+    .book::before {
+        width: 1.5em;
+    }
 }
