@@ -6,7 +6,7 @@
     width: 100vw;
     padding: 2em;
     padding-top: 0;
-    min-width: 520px;
+    /* min-width: 520px; */
 }
 
 /* Homescreen.jsx */
@@ -19,16 +19,19 @@
 .homescreen p {
     margin: 0;
     margin-top: .7em;
-    /* font-size: 1.2em; */
+    font-size: 1.15em;
 }
 .name {
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 .name .italic {
     font-style: italic;
     position: relative;
     margin-left: .3em;
+    font-size: 1.25em;
+    display: inline-block;
+    margin-top: .3em;
 }
 @keyframes slideIn {
     0% {
@@ -51,12 +54,11 @@
 
 .word-cloud {
     position: relative;
+    margin: 0 auto;
     /* border: 2px solid black; */
-    height: 40vh;
-    width: 100%;
-    max-width: 390px;
-    min-width: 350px;
-    min-height: 320px;
+    height: 28vh;
+    width: 90%;
+    font-size: 6.4px;
 }
 .word {
     position: absolute;
@@ -66,7 +68,6 @@
     font-size: 2em;
 }
 .nav-container {
-    padding: 0 2em;
     padding-top: .8em;
     display: grid;
     justify-items: flex-end;
@@ -78,7 +79,7 @@ nav {
     right: 2em;
     z-index: 100;
     height: 58vh;
-    min-height: 500px;
+    /* min-height: 500px; */
     width: 40vw;
     background-color: var(--primary-colour);
 
@@ -189,7 +190,8 @@ nav a:hover::before, .active::before {
 .book {
     position: relative;
     width: 100%;
-    height: 28vh;
+    /* height: 28vh; */
+    height: 40vh;
     background-color: var(--accent-colour);
     border-radius: 0 15px 15px 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
@@ -279,6 +281,7 @@ nav a:hover::before, .active::before {
 .divider {
     border: 1.5px solid var(--primary-colour);
     margin: 1.5em 1.5em;
+    margin-left: 3em;
 }
 .section-wrapper {
     display: grid;
@@ -405,8 +408,22 @@ input[type="text"] {
 }
 
 /* Media Queries */
+/* Phone */
+@media only screen and (min-width: 700px) {
+    .book {
+        height: 35vh;
+    }
+    nav {
+        width: 30vw;
+        height: 80%;
+    }
+    .menu-hide {
+        /* 80vh is the height of the nav */
+        transform: translateY(-80vh);
+    }
+}
 /* Tablet */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 650px) {
     .about-me-wrapper {
         display: flex;
     }
@@ -439,13 +456,7 @@ input[type="text"] {
     .main {
         padding: 2em 5em;
         padding-right: calc(10em + 20vw);
-    }
-    .homescreen {
-        place-content: unset;
-    }   
-    .word-cloud {
-        margin: auto 0;
-    }
+    } 
     .menu-button {
         visibility: hidden;
     }
@@ -454,12 +465,12 @@ input[type="text"] {
         padding: 0;
     }
     nav {
-        height: 80%;
-        margin-right: 4em;
+        height: 85%;
+        margin-right: 2em;
         transition: none;
         width: 15em;
-        gap: .5em;
-        max-height: 600px;
+        gap: auto;
+        /* max-height: 600px; */
     }
     .nav-link-wrapper {
         margin-top: 2em;
@@ -468,7 +479,7 @@ input[type="text"] {
         display: none;
     }
     nav a {
-        margin: 1.5em 2em;
+        margin: auto 2em;
     }
     .menu-hide {
         transform: none;
@@ -488,13 +499,10 @@ input[type="text"] {
     .filter-scroll {
         overflow: unset;
     }
-    .homescreen {
-        font-size: 20px;
-    }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1400px) {
     :root {
-        font-size: 20px;
+        font-size: 18px;
     }
     .main {
         padding: 2em 7em;
@@ -502,11 +510,6 @@ input[type="text"] {
     }
     nav {
         max-height: 700px;
-    }
-    .word-cloud {
-        max-width: 500px;
-        font-size: 25px;
-        margin: 2em 0;
     }
     .card-container {
         display: grid;
@@ -530,5 +533,45 @@ input[type="text"] {
     }
     .book::before {
         width: 1.5em;
+    }
+}
+
+/* media queries for word-cloud */
+@media screen and (min-width: 500px) {
+    .word-cloud {
+        width: 70%;
+        height: 35vh;
+        font-size: 6.4px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .word-cloud {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .word-cloud {
+        width: 70%;
+        font-size: 12px;
+        height: 40vh;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .word-cloud {
+        font-size: 14px;
+        height: 43vh;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .word-cloud {
+        width: 85%;
+        font-size: 14px;
+        height: 45vh;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .word-cloud {
+        font-size: 20px;
     }
 }
