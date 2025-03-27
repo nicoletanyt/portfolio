@@ -99,6 +99,9 @@ nav a {
     text-align: center;
     z-index: 2;
 }
+nav a:hover::before, .active::before {
+    content: '> ';
+}
 .close-btn {
     color: var(--main-colour);
     z-index: 2;
@@ -452,9 +455,9 @@ input[type="text"] {
     }
     nav {
         height: 80%;
-        margin-right: 5em;
+        margin-right: 4em;
         transition: none;
-        width: fit-content;
+        width: 15em;
         gap: .5em;
         max-height: 600px;
     }
@@ -465,7 +468,7 @@ input[type="text"] {
         display: none;
     }
     nav a {
-        padding: 1.5em 2em;
+        margin: 1.5em 2em;
     }
     .menu-hide {
         transform: none;
@@ -498,7 +501,6 @@ input[type="text"] {
         padding-right: calc(10em + 20vw);
     }
     nav {
-        /* width: 13%; */
         max-height: 700px;
     }
     .word-cloud {

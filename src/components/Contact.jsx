@@ -3,7 +3,7 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { SiLeetcode } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 
-function Contact() {
+function Contact({elRef}) {
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("");
@@ -46,9 +46,9 @@ function Contact() {
     }
 
   return (
-		<div id="contact-me">
+		<div id="contact-me" ref={elRef}>
 			<h1>contact me</h1>
-			<p className='email-text'>email: ntytomg@gmail.com</p>
+			<p className="email-text">email: ntytomg@gmail.com</p>
 			<form onSubmit={handleSubmit}>
 				<label>
 					Name

@@ -8,14 +8,14 @@ import FilterButton from './FilterButton';
 import UpButton from './UpButton';
 import useIsVisible from '../hooks/useIsVisible';
 
-function Achievements() {
+function Achievements({elRef}) {
 
   const [category, setCategory] = useState("")
   // up button visibility
   const [visible, setVisible] = useState(false) 
 
-  const achievementWrapper = useRef()
-  const inView = useIsVisible(achievementWrapper)
+  const achievementWrapper = useRef({})
+  const inView = useIsVisible({refDict: achievementWrapper})
 
   const filters = [
 		{
@@ -50,7 +50,7 @@ function Achievements() {
 	}, [inView])
 
   return (
-		<div id="achievements">
+		<div id="achievements" ref={elRef}>
 			<h1>achievements</h1>
 			<div className="filter-wrapper">
 				<p className="filter-label">filter: </p>
@@ -66,7 +66,10 @@ function Achievements() {
 					))}
 				</div>
 			</div>
-			<div className="section-wrapper" ref={achievementWrapper}>
+			<div
+				className="section-wrapper"
+				ref={achievementWrapper}
+			>
 				{/* sorts so that latest is shown first */}
 				{Object.keys(data.achievements)
 					.sort(function (a, b) {

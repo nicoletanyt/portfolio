@@ -5,21 +5,11 @@ import Word from './Word'
 function WordCloud() {
 	const [scale, setScale] = useState(0);
 
-	// TODO: add event listener for when window resizes, then change scale accordingly
-
-	// width > 1500: scale = 2
-	// width > 1000: scale = 1.6
-
 	const resizeScale = () => {
 		if (screen.width > 1500) setScale(1.8)
 		else if (screen.width > 1000) setScale(1.6)
 		else if (screen.width > 700) setScale(1.4)
-		console.log(screen.width, screen.height)
 	}
-
-	useEffect(() => {
-		console.log(scale)
-	}, [scale])
 
 	useEffect(() => {
 		resizeScale()

@@ -2,11 +2,11 @@ import React from 'react'
 import Card from './Card';
 import data from "../data.json"
 
-function AboutMe() {
+function AboutMe({elRef}) {
   return (
-		<div id="about-me">
+		<div id="about-me" ref={elRef}>
 			<h1>about me</h1>
-			<div className='about-me-wrapper'>
+			<div className="about-me-wrapper">
 				<div className="img-wrapper">
 					<img className="profile-pic" src={"src/assets/about-me.jpeg"} />
 				</div>
@@ -18,8 +18,10 @@ function AboutMe() {
 					lover. I am always eager to learn new things and tackle challenges.
 					<br />I aspire to continue exploring different aspects of technology
 					and creating apps that benefit the community!
-					<br/>
-					<a className='contact-nav' href="#contact-me">Drop me a message!</a>
+					<br />
+					<a className="contact-nav" href="#contact-me">
+						Drop me a message!
+					</a>
 				</p>
 			</div>
 			<h2>~ education</h2>

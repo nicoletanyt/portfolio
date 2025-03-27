@@ -2,9 +2,9 @@ import React from "react";
 import data from "../data.json";
 import Card from "./Card";
 
-function Involvement() {
+function Involvement({elRef}) {
 	return (
-		<div id="involvement">
+		<div id="involvement" ref={elRef}>
 			<h1>involvement</h1>
 			{Object.keys(data.involvement).map((heading, index) => (
 				<div key={index}>
