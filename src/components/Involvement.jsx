@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import data from "../data.json";
 import Card from "./Card";
+import UpButton from "./UpButton";
 
 function Involvement({elRef}) {
+
+	const involvementWrapper = useRef({})
+
 	return (
-		<div id="involvement" ref={elRef}>
+		<div
+			id="involvement"
+			ref={(el) => {
+				elRef(el);
+				involvementWrapper.current = el;
+			}}
+		>
 			<h1>involvement</h1>
 			{Object.keys(data.involvement).map((heading, index) => (
 				<div key={index}>
@@ -23,6 +33,7 @@ function Involvement({elRef}) {
 					</div>
 				</div>
 			))}
+			<UpButton heading={"#involvement"} wrapperRef={involvementWrapper} />
 		</div>
 	);
 }

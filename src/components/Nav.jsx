@@ -32,7 +32,7 @@ function Nav({ observers }) {
 					</button>
 					<a
 						href="#about-me"
-						className={activePage == "about-me" && "active"}
+						className={activePage == "about-me" ? "active": ""}
 						onClick={() => selectPage("about-me")}
 					>
 						about me
@@ -40,28 +40,28 @@ function Nav({ observers }) {
 					<a
 						href="#projects"
 						onClick={() => selectPage("projects")}
-						className={activePage == "projects" && "active"}
+						className={activePage == "projects" ? "active": ""}
 					>
 						projects
 					</a>
 					<a
 						href="#achievements"
 						onClick={() => selectPage("achievements")}
-						className={activePage == "achievements" && "active"}
+						className={activePage == "achievements" ? "active": ""}
 					>
 						achievements
 					</a>
 					<a
 						href="#involvement"
 						onClick={() => selectPage("involvement")}
-						className={activePage == "involvement" && "active"}
+						className={activePage == "involvement" ? "active": ""}
 					>
 						involvement
 					</a>
 					<a
 						href="#contact-me"
 						onClick={() => selectPage("contact-me")}
-						className={activePage == "contact-me" && "active"}
+						className={activePage == "contact-me" ? "active": ""}
 					>
 						contact me
 					</a>

@@ -11,11 +11,8 @@ import useIsVisible from '../hooks/useIsVisible';
 function Achievements({elRef}) {
 
   const [category, setCategory] = useState("")
-  // up button visibility
-  const [visible, setVisible] = useState(false) 
 
   const achievementWrapper = useRef({})
-  const inView = useIsVisible({refDict: achievementWrapper})
 
   const filters = [
 		{
@@ -35,19 +32,6 @@ function Achievements({elRef}) {
       label: "math"
     }
 	];
-
-	const handleScroll = () => {
-		if (inView) {
-			const rect = achievementWrapper.current.getBoundingClientRect();	 
-			setVisible(rect.top < 0 && (rect.bottom >= screen.height));
-		} else {
-			setVisible(false)
-		}
-	}
-
-	useEffect(() => {
-		document.querySelector(".main").addEventListener("scroll", handleScroll)
-	}, [inView])
 
   return (
 		<div id="achievements" ref={elRef}>
@@ -79,7 +63,7 @@ function Achievements({elRef}) {
 						<AchievementSection key={key} header={year} category={category} />
 					))}
 			</div>
-			<UpButton heading={"#achievements"} visible={visible} />
+			<UpButton heading={"#achievements"} wrapperRef={achievementWrapper} />
 		</div>
 	);
 }
