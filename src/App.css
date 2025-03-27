@@ -190,7 +190,6 @@ nav a:hover::before, .active::before {
 .book {
     position: relative;
     width: 100%;
-    /* height: 28vh; */
     height: 40vh;
     background-color: var(--accent-colour);
     border-radius: 0 15px 15px 0;
@@ -218,7 +217,7 @@ nav a:hover::before, .active::before {
 .book img {
     /* width: 60%; */
     max-height: 140px;
-    max-width: 230px;
+    max-width: 200px;
     object-fit: contain;
     margin: 0 auto;
 }
@@ -237,7 +236,8 @@ nav a:hover::before, .active::before {
     row-gap: 1.5em;
 }
 .book .back {
-    padding: 1em 2.5em;
+    padding: .6em 2em;
+    padding-right: .5em;
 }
 .book .back p {
     line-height: 1.5em;
@@ -381,7 +381,7 @@ input[type="text"] {
     width: 100%;
 }
 #submit-btn {
-    padding: 0.8em 2.5em;
+    padding: 0.8em 1.5em;
     background-color: var(--primary-colour);
     color: var(--main-colour);
     border: none;
@@ -392,7 +392,7 @@ input[type="text"] {
 }
 .bottom-wrapper {
     display: flex;
-    /* margin-top: 1em; */
+    margin-top: 3em;
     justify-content: space-between;
 }
 .socials-wrapper {
@@ -408,18 +408,9 @@ input[type="text"] {
 }
 
 /* Media Queries */
-/* Phone */
-@media only screen and (min-width: 700px) {
-    .book {
-        height: 35vh;
-    }
-    nav {
-        width: 30vw;
-        height: 80%;
-    }
-    .menu-hide {
-        /* 80vh is the height of the nav */
-        transform: translateY(-80vh);
+@media only screen and (min-width: 500px) {
+    #submit-btn {
+        padding: 0.8em 2.5em;
     }
 }
 /* Tablet */
@@ -448,6 +439,19 @@ input[type="text"] {
     }
     .book img {
         max-width: 200px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .book {
+        height: 35vh;
+    }
+    nav {
+        width: 30vw;
+        height: 80%;
+    }
+    .menu-hide {
+        /* 80vh is the height of the nav */
+        transform: translateY(-80vh);
     }
 }
 

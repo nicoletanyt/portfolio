@@ -10,10 +10,13 @@ function Word({word, text, scale}) {
     };
 
   return (
-    <p className="word" style={style}>
-        {text}
-    </p>
-  )
+		<p
+			className="word animate__bounceInUp animate__animated animate__slow"
+			style={style}
+		>
+			{text}
+		</p>
+	);
 }
 
 export default Word
