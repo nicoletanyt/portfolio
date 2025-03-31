@@ -32,7 +32,7 @@ function Nav({ observers }) {
 						<IoMdClose className="icon" />
 					</button>
 					<a
-						href="/"
+						href="/portfolio"
 						// className={activePage == "homepage" ? "active" : ""}
 						className="favicon"
 						onClick={() => selectPage("homepage")}
