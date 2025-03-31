@@ -4,6 +4,21 @@ import {
 	IoIosArrowDropleftCircle,
 } from "react-icons/io";
 
+// Image Imports
+import suscity from "/src/assets/projects/suscity.png";
+import graphs from "/src/assets/projects/graphs-plugin.png";
+import soundSeatTicketing from "/src/assets/projects/sound-seat-ticketing.png";
+import sstea from "/src/assets/projects/sstea.png";
+import planemail from "/src/assets/projects/planemail.png";
+
+const images = {
+	"SUSCITY": suscity,
+	"Graphs in Obsidian Plugin": graphs,
+	"Sound Seat Ticketing": soundSeatTicketing,
+	"SSTea": sstea,
+	"PlaneMail": planemail
+}
+
 function Book({project, spanTwo}) {
     const [front, setFront] = useState(true)
 
@@ -21,7 +36,7 @@ function Book({project, spanTwo}) {
 						: "book-hide"
 				)}
 			>
-				<img src={project.image} />
+				<img src={images[project.name]} />
 				<p className="project-name">{project.name}</p>
 			</div>
 			<div

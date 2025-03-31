@@ -103,6 +103,9 @@ nav a {
 nav a:hover::before, .active::before {
     content: '> ';
 }
+.favicon:hover::before {
+    content: '' !important;
+}
 .close-btn {
     color: var(--main-colour);
     z-index: 2;

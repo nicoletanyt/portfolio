@@ -12,6 +12,7 @@ import useIsVisible from './hooks/useIsVisible';
 function App() {
 
 	const observerRefs = useRef({
+		homepage: useRef(null),
 		"about-me": useRef(null),
 		achievements: useRef(null),
 		projects: useRef(null),
@@ -25,7 +26,7 @@ function App() {
 		<div>
 			<Nav observers={observers} />
 			<div className="main">
-				<Homescreen />
+				<Homescreen elRef={(el) => (observerRefs.current["homepage"] = el)} />
 				<AboutMe elRef={(el) => (observerRefs.current["about-me"] = el)} />
 				<Projects elRef={(el) => (observerRefs.current["projects"] = el)} />
 				<Achievements

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import "animate.css";
+import favicon from "/public/favicon.svg";
 
 function Nav({ observers }) {
 	const [showNav, setShowNav] = useState(false);
@@ -25,16 +26,19 @@ function Nav({ observers }) {
 			<button className="menu-button" onClick={() => setShowNav(true)}>
 				<IoMdMenu />
 			</button>
-			<nav
-				className={showNav
-					? "menu-show"
-					: "menu-hide"
-				}
-			>
+			<nav className={showNav ? "menu-show" : "menu-hide"}>
 				<div className="nav-link-wrapper">
 					<button className="close-btn" onClick={() => setShowNav(false)}>
 						<IoMdClose className="icon" />
 					</button>
+					<a
+						href="/"
+						// className={activePage == "homepage" ? "active" : ""}
+						className="favicon"
+						onClick={() => selectPage("homepage")}
+					>
+						<img src={favicon} id="favicon-icon" />
+					</a>
 					<a
 						href="#about-me"
 						className={activePage == "about-me" ? "active" : ""}

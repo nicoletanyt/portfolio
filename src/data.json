@@ -5,7 +5,6 @@
             "language": ".js",
             "description": "SUSCITY is an educational game designed to help students visualise geography concepts through a city-building simulation and geography-related questions.",
             "link": "https://sus-city.github.io/",
-            "image": "src/assets/projects/suscity.png",
             "label": "Play SUSCITY"
         },
         {
@@ -13,7 +12,6 @@
             "language": ".react",
             "description": "A plugin for the note-taking app Obsidian that lets you plot and include graphs and vectors in your notes for better visualisation.",
             "link": "https://github.com/nicoletanyt/obsidian-plugin-graphs",
-            "image": "src/assets/projects/graphs-plugin.png",
             "label": "Check out the plugin"
         },
         {
@@ -21,7 +19,6 @@
             "language": ".py",
             "description": "Sound Seat Ticketing is a voice-controlled, automated movie ticket booking bot for Cathay Cineplexes. It is designed to provide convenience and efficiency for individuals with visual or motor impairments.",
             "link": "https://github.com/lukeskywalker22/sound_seat_ticketing/tree/main",
-            "image": "src/assets/projects/sound-seat-ticketing.png",
             "label": "View the Github"
         },
         {
@@ -29,7 +26,6 @@
             "language": ".js",
             "description": "SSTea is an online tower defence game aimed to promote gardening. Available on mobile browsers only (Google/Brave is recommended)",
             "link": "https://nicoletanyt.github.io/SSTea/",
-            "image": "src/assets/projects/sstea.png",
             "label": "Check out SSTea"
         },
         {
@@ -37,7 +33,6 @@
             "language": ".swift",
             "description": "Developed under the Swift Accelerator Programme, PlaneMail is an on-the-go email planner designed to help you write clear and concise messages, reducing the risk of miscommunication. Supports both English and Chinese.",
             "link": "https://apps.apple.com/us/app/planemail/id6444731917",
-            "image": "src/assets/projects/planemail.png",
             "label": "Download PlaneMail"
         }
     ],

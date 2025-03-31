@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card';
 import data from "../data.json"
+import AboutMeImg from "/src/assets/about-me.jpeg";
 
 function AboutMe({elRef}) {
   return (
@@ -8,7 +9,7 @@ function AboutMe({elRef}) {
 			<h1>about me</h1>
 			<div className="about-me-wrapper">
 				<div className="img-wrapper">
-					<img className="profile-pic" src={"src/assets/about-me.jpeg"} />
+					<img className="profile-pic" src={AboutMeImg} />
 				</div>
 				<p className="description">
 					Hi, I'm Nicole Tan YiTong, a 16 year-old student with a passion for

@@ -2,9 +2,9 @@ import React from 'react'
 import WordCloud from './WordCloud';
 import { FaAngleDoubleDown } from "react-icons/fa";
 
-function Homescreen({ref}) {
+function Homescreen({elRef}) {
   return (
-		<div className="homescreen">
+		<div ref={elRef} className="homescreen" id="homepage">
 			<WordCloud />
 			<h1 className="name">
 				hi, i'm <span className="italic">nicole tan</span>
