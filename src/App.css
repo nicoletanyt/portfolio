@@ -78,9 +78,9 @@ nav {
     top: 0;
     right: 2em;
     z-index: 100;
-    height: 58vh;
+    height: 75vh;
     /* min-height: 500px; */
-    width: 40vw;
+    width: 58vw;
     background-color: var(--primary-colour);
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 3px) 82%, 0 100%, 0 0);
@@ -125,7 +125,7 @@ nav a:hover::before, .active::before {
     transform: translateY(0);
 }
 .menu-hide {
-    transform: translateY(-58vh);
+    transform: translateY(-75vh);
 }
 
 /* About Me */
@@ -414,6 +414,9 @@ input[type="text"] {
 @media only screen and (min-width: 500px) {
     #submit-btn {
         padding: 0.8em 2.5em;
+    }
+    nav {
+        width: 45vw;
     }
 }
 /* Tablet */
