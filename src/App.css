@@ -470,7 +470,7 @@ input[type="text"] {
     }
     nav {
         height: 85%;
-        margin-right: 2em;
+        margin-right: 5em;
         transition: none;
         width: 15em;
         gap: auto;
