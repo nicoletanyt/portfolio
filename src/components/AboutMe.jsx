@@ -12,10 +12,10 @@ function AboutMe({elRef}) {
 					<img className="profile-pic" src={AboutMeImg} />
 				</div>
 				<p className="description">
-					Hi, I'm Nicole Tan YiTong, a 16 year-old student with a passion for
+					Hi, I'm Nicole Tan YiTong, a 17 year-old student with a passion for
 					coding, particularly web development and artificial intelligence :)
 					<br />
-					Aside from coding, I am an avid reader, music enthusiast, and coffee
+					Aside from coding, I am an avid reader, music enthusiast, and milk tea
 					lover. I am always eager to learn new things and tackle challenges.
 					<br />I aspire to continue exploring different aspects of technology
 					and creating apps that benefit the community!

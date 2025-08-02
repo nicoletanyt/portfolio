@@ -39,6 +39,14 @@
     "achievements": {
         "2024": [
             {
+                "name": "9 Distinctions in the Singapore-Cambridge General Certificate of Education Ordinary Level",
+                "category": "academic"
+            },
+            {
+                "name": "2024 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 4)",
+                "category": "academic"
+            },
+            {
                 "name": "Singapore & Asian Schools Math Olympiad (SASMO) 2024",
                 "category": "math"
             },
@@ -372,7 +380,7 @@
         },
         {
             "year": 2025,
-            "school": "Ngee Ann Polytechnic"
+            "school": "Ngee Ann Polytechnic (Information Technology)"
         }
     ]
 }
