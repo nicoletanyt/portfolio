@@ -37,11 +37,17 @@
         }
     ],
     "achievements": {
-        "2024": [
+        "2025": [
             {
                 "name": "9 Distinctions in the Singapore-Cambridge General Certificate of Education Ordinary Level",
                 "category": "academic"
             },
+            {
+                "name": "PforSST Service Learning Award",
+                "category": "academic"
+            }
+        ],
+        "2024": [
             {
                 "name": "2024 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 4)",
                 "category": "academic"
