@@ -388,15 +388,24 @@
     "education": [
         {
             "year": 2015,
-            "school": "Pei Tong Primary School"
+            "endYear": 2020,
+            "school": "Pei Tong Primary School",
+            "logo": "pei-tong"
         },
         {
             "year": 2021,
-            "school": "School of Science and Technology, Singapore"
+            "endYear": 2024,
+            "school": "School of Science and Technology, Singapore",
+            "logo": "sst"
         },
         {
             "year": 2025,
-            "school": "Ngee Ann Polytechnic (Information Technology)"
+            "endYear": 2028,
+            "school": "Ngee Ann Polytechnic",
+            "details": "Diploma in Information Technology with Second Major in Business",
+            "cgpa": "3.975",
+            "logo": "ngee-ann",
+            "current": true
         }
     ]
 }
