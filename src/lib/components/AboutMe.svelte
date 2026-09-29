@@ -4,11 +4,17 @@
     import ngeeAnnLogo from "../../assets/ngee-ann-logo.png";
     import peiTongLogo from "../../assets/pei-tong-logo.png";
     import sstLogo from "../../assets/sst-logo.png";
+    import kinokuniyaLogo from "../../assets/kinokuniya-logo.png";
+    import lcclLogo from "../../assets/lccl-logo.svg";
 
     const educationLogos = {
         "ngee-ann": ngeeAnnLogo,
         "pei-tong": peiTongLogo,
         sst: sstLogo,
+    };
+    const experienceLogos = {
+        kinokuniya: kinokuniyaLogo,
+        lccl: lcclLogo,
     };
 </script>
 
@@ -69,14 +75,12 @@
                     />
                 </div>
 
-                <div class="min-w-0">
-                    <p
-                        class={`leading-6 ${item.current ? "text-lg font-semibold" : "font-medium"}`}
-                    >
+                <div class="min-w-0 gap-1 grid">
+                    <p class={`leading-6 font-medium`}>
                         {item.school}
                     </p>
                     {#if item.details}
-                        <p class="mt-0.5 text-sm font-medium text-ink/75">
+                        <p class="mt-0.5 text-sm font-base text-ink/75">
                             {item.details}
                         </p>
                     {/if}
@@ -91,6 +95,40 @@
                     class="col-start-2 text-sm font-medium whitespace-nowrap text-ink/70 sm:col-start-3 sm:row-start-1 sm:text-right"
                 >
                     {item.year} – {item.endYear ?? "Present"}
+                </p>
+            </article>
+        {/each}
+    </div>
+
+    <h3 class="my-10 text-2xl font-normal italic">~ experience</h3>
+    <div class="divide-y divide-ink/15 border-y border-ink/15">
+        {#each data.experience as item (`${item.company}-${item.year}`)}
+            <article
+                class={`grid grid-cols-[4.5rem_minmax(0,1fr)] items-center gap-x-4 gap-y-1 px-3 py-4 sm:grid-cols-[6rem_minmax(0,1fr)_auto] sm:gap-x-6 sm:px-5 ${item.current ? "border-l-2 border-ink bg-sky/20" : ""}`}
+            >
+                <div
+                    class="row-span-2 flex h-14 items-center justify-center sm:row-span-1"
+                >
+                    <img
+                        src={experienceLogos[item.logo]}
+                        alt={`${item.company} logo`}
+                        class="max-h-14 max-w-full object-contain"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="min-w-0">
+                    <p class="font-medium leading-6">{item.role}</p>
+                    <p class="mt-0.5 text-sm font-medium text-ink/65">
+                        {item.company}
+                    </p>
+                </div>
+                <p
+                    class="col-start-2 text-sm font-medium whitespace-nowrap text-ink/70 sm:col-start-3 sm:row-start-1 sm:text-right"
+                >
+                    {item.month}
+                    {item.year} – {item.current
+                        ? "Present"
+                        : `${item.endMonth} ${item.endYear}`}
                 </p>
             </article>
         {/each}

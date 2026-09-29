@@ -384,5 +384,24 @@
             "logo": "ngee-ann",
             "current": true
         }
+    ],
+    "experience": [
+        {
+            "year": 2024,
+            "month": "Dec",
+            "endYear": 2025,
+            "endMonth": "Mar",
+            "role": "Part-Time Logistics Assistant",
+            "company": "Kinokuniya",
+            "logo": "kinokuniya"
+        },
+        {
+            "year": 2025,
+            "month": "Oct",
+            "role": "Teacher",
+            "company": "LCCL Coding Academy",
+            "logo": "lccl",
+            "current": true
+        }
     ]
 }
