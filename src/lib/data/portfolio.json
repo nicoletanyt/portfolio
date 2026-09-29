@@ -2,31 +2,46 @@
     "projects": [
         {
             "name": "InSync",
-            "language": ".swift",
+            "tech": [
+                ".swift",
+                ".py",
+                "FastAPI",
+                ".rs",
+                "React",
+                "OpenShift"
+            ],
             "description": "AI-powered communication facilitator helping AAC users express themselves independently through personalised voices and communication support.",
             "link": "https://www.businesstimes.com.sg/lifestyle/dell-innovatefest-2026-explores-ai-tech-solutions-persons-disabilities-live-independently",
-            "label": "Read Business Times Feature"
+            "featured": true
         },
         {
             "name": "BeatDash",
-            "language": ".svelte",
-            "description": "A lightweight music player that combines Spotify and YouTube, letting you control everything without taking your hands off the keyboard. ",
-            "link": "https://github.com/nicoletanyt/beatdash",
-            "label": "View more on Github"
+            "tech": [
+                ".svelte",
+                ".ts",
+                ".rs",
+                "Tauri",
+                "Tailwind"
+            ],
+            "description": "Spotify + YouTube music player built for keyboard-first control.",
+            "link": "https://github.com/nicoletanyt/beatdash"
         },
         {
             "name": "SUSCITY",
-            "language": ".js",
-            "description": "SUSCITY is an educational game designed to help students visualise geography concepts through a city-building simulation and geography-related questions.",
-            "link": "https://sus-city.github.io/",
-            "label": "Play SUSCITY"
+            "tech": [
+                ".js"
+            ],
+            "description": "An educational city-building game that helps students visualise geography concepts.",
+            "link": "https://sus-city.github.io/"
         },
         {
             "name": "Graphs in Obsidian Plugin",
-            "language": ".react",
-            "description": "A plugin for the note-taking app Obsidian that lets you plot and include graphs and vectors in your notes for better visualisation.",
-            "link": "https://github.com/nicoletanyt/obsidian-plugin-graphs",
-            "label": "Check out the plugin"
+            "tech": [
+                ".ts",
+                "React"
+            ],
+            "description": "An Obsidian plugin for plotting graphs and vectors directly in your notes.",
+            "link": "https://github.com/nicoletanyt/obsidian-plugin-graphs"
         }
     ],
     "achievements": {

@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="min-w-0 gap-1 grid">
-                    <p class={`leading-6 font-medium`}>
+                    <p class="leading-6 font-medium">
                         {item.school}
                     </p>
                     {#if item.details}
