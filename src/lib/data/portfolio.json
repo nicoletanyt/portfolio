@@ -32,7 +32,8 @@
     "achievements": {
         "2026": [
             {
-                "name": "Edusave Merit Bursary (Polytechnic Year 1)",
+                "name": "Edusave Merit Bursary",
+                "subtitle": "Polytechnic Year 1",
                 "category": "academic"
             },
             {
@@ -40,25 +41,40 @@
                 "category": "coding"
             },
             {
-                "name": "Dell InnovateFest 2026: Polytechnic Champion Team",
-                "category": "coding"
+                "title": "Dell InnovateFest 2026",
+                "subtitle": "Polytechnic Champion Team",
+                "category": "coding",
+                "highlight": true,
+                "icon": "trophy",
+                "link": "https://www.businesstimes.com.sg/lifestyle/dell-innovatefest-2026-explores-ai-tech-solutions-persons-disabilities-live-independently",
+                "label": "Learn more"
             }
         ],
         "2025": [
             {
-                "name": "9 Distinctions in the Singapore-Cambridge General Certificate of Education Ordinary Level",
-                "category": "academic"
+                "title": "9 Distinctions in Singapore-Cambridge GCE O-Level",
+                "category": "academic",
+                "highlight": true,
+                "icon": "star"
+            },
+            {
+                "title": "DSTA Polytechnic Digital Scholarship",
+                "category": "academic",
+                "highlight": true,
+                "icon": "star"
             },
             {
                 "name": "PforSST Service Learning Award",
                 "category": "academic"
             },
             {
-                "name": "Module Prizes for Computing Mathematics and Programming 1 for Polytechnic Year 1, Semester 1 (Apr 2025)",
+                "title": "Module Prizes for Computing Mathematics and Programming 1",
+                "subtitle": "Polytechnic Year 1, Semester 1",
                 "category": "academic"
             },
             {
-                "name": "Director's List for Polytechnic Year 1, Semester 1 (Apr 2025) and Semester 2 (Oct 2025)",
+                "title": "Director's List",
+                "subtitle": "Polytechnic Year 1 · Semester 1 & 2",
                 "category": "academic"
             },
             {
@@ -68,7 +84,8 @@
         ],
         "2024": [
             {
-                "name": "2024 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 4)",
+                "title": "Edusave Scholarship (Independent Schools)",
+                "subtitle": "Awarded annually · 2021–2024",
                 "category": "academic"
             },
             {
@@ -88,8 +105,11 @@
                 "category": "coding"
             },
             {
-                "name": "National Olympiad in Informatics (NOI) 2024 Finals: Bronze",
-                "category": "coding"
+                "title": "National Olympiad in Informatics (NOI) 2024 Finals",
+                "subtitle": "Bronze",
+                "category": "coding",
+                "highlight": true,
+                "icon": "award"
             },
             {
                 "name": "Represented Singapore at iDEX 2024 organised by ACS(I)",
@@ -156,10 +176,6 @@
             {
                 "name": "First Lego League (FLL) 2023 - 2024 (Masterpiece)",
                 "category": "robotics"
-            },
-            {
-                "name": "2023 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 3)",
-                "category": "academic"
             }
         ],
         "2022": [
@@ -206,10 +222,6 @@
             {
                 "name": "First Lego League (FLL) 2022 - 2023 (Super Powered)",
                 "category": "robotics"
-            },
-            {
-                "name": "2022 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 2)",
-                "category": "academic"
             }
         ],
         "2021": [
@@ -224,49 +236,18 @@
             {
                 "name": "First Lego League (FLL) 2021 (Cargo Connect)",
                 "category": "robotics"
-            },
-            {
-                "name": "2021 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 1)",
-                "category": "academic"
             }
         ],
         "2020": [
             {
-                "name": "Edusave Scholarship 2020 (Primary 6)",
+                "title": "Edusave Scholarship",
+                "subtitle": "Awarded annually · 2015–2020",
                 "category": "academic"
             }
         ],
         "2019": [
             {
-                "name": "Edusave Scholarship 2019 (Primary 5)",
-                "category": "academic"
-            },
-            {
-                "name": "Edusave Award for Achievement, Good Leadership and Service (EAGLES) 2019",
-                "category": "academic"
-            }
-        ],
-        "2018": [
-            {
-                "name": "Edusave Scholarship 2018 (Primary 4)",
-                "category": "academic"
-            }
-        ],
-        "2017": [
-            {
-                "name": "Edusave Scholarship 2017 (Primary 3)",
-                "category": "academic"
-            }
-        ],
-        "2016": [
-            {
-                "name": "Edusave Scholarship 2016 (Primary 2)",
-                "category": "academic"
-            }
-        ],
-        "2015": [
-            {
-                "name": "Edusave Scholarship 2015 (Primary 1)",
+                "name": "Edusave Award for Achievement, Good Leadership and Service (EAGLES)",
                 "category": "academic"
             }
         ]
