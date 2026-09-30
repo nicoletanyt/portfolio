@@ -41,9 +41,7 @@
     class="relative flex min-h-dvh scroll-mt-16 justify-between items-center pt-28 pb-16 lg:pt-16"
 >
     <div class="relative z-10 mt-5 max-w-3xl">
-        <h1
-            class="text-5xl leading-tight font-normal tracking-[-0.04em] sm:text-6xl lg:text-7xl"
-        >
+        <h1>
             Hi, I’m <span
                 class="relative inline-block italic before:absolute before:right-[-5%] before:bottom-[0.04em] before:left-[-5%] before:-z-10 before:h-[0.72em] before:origin-left before:scale-x-0 before:bg-sky before:content-[''] before:[animation:highlight-in_700ms_350ms_ease_forwards]"
                 >Nicole.</span

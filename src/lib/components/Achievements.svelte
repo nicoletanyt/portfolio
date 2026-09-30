@@ -41,7 +41,7 @@
 
 <section id="achievements" class="relative scroll-mt-20 py-20 sm:py-24 lg:py-28">
   <div class="mb-10 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-    <h2 class="flex min-w-0 flex-1 items-center gap-4 text-4xl font-semibold tracking-[-0.04em] after:h-0.5 after:flex-1 after:bg-linear-to-r after:from-ink after:to-transparent after:opacity-30 after:content-[''] sm:text-5xl">achievements</h2>
+    <h2 class="flex min-w-0 flex-1 items-center gap-4 after:h-0.5 after:flex-1 after:bg-linear-to-r after:from-ink after:to-transparent after:opacity-30 after:content-['']">achievements</h2>
 
     <div class="flex flex-wrap items-center gap-2 lg:flex-nowrap lg:justify-end">
       {#each filters as filter (filter.label)}
@@ -86,7 +86,7 @@
       {@const items = category ? achievements[year].filter((item) => item.category === category) : achievements[year]}
       {#if items.length}
         <section aria-labelledby={`achievements-${year}`}>
-          <h3 id={`achievements-${year}`} class="mb-2 text-xl font-semibold tracking-[-0.02em] md:text-center md:text-2xl">{year}</h3>
+          <h3 id={`achievements-${year}`} class="mb-2 md:text-center">{year}</h3>
 
           <ul class="relative space-y-1 before:absolute before:top-4 before:bottom-4 before:left-3 before:w-px before:bg-ink/20 before:content-[''] md:before:left-1/2 md:before:-translate-x-1/2">
             {#each items as item, index (`${year}-${item.title}`)}

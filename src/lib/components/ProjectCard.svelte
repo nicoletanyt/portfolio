@@ -44,14 +44,12 @@
         class="flex min-w-0 flex-1 flex-col gap-3 justify-center p-4 sm:p-4 md:p-5"
     >
         <div class="mb-2 flex items-start justify-between gap-2">
-            <h3
-                class="text-lg font-semibold leading-tight tracking-[-0.035em] sm:text-xl"
-            >
+            <h3>
                 {project.name}
             </h3>
             <a
-                href={project.link}
-                target="_blank"
+                href={project.caseStudy || project.link}
+                target={project.caseStudy ? undefined : "_blank"}
                 rel="external noreferrer"
                 aria-label={`Open ${project.name}`}
                 class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-ink/20 text-ink transition-colors hover:border-ink hover:bg-ink hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"

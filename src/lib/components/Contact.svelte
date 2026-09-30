@@ -28,7 +28,7 @@
 </script>
 
 <section id="contact-me" class="relative min-h-[85vh] scroll-mt-20 py-20 sm:py-24 lg:py-28">
-  <h2 class="mb-10 flex items-center gap-4 text-4xl font-semibold tracking-[-0.04em] after:h-0.5 after:flex-1 after:bg-linear-to-r after:from-ink after:to-transparent after:opacity-30 after:content-[''] sm:text-5xl">contact me</h2>
+  <h2 class="mb-10 flex items-center gap-4 after:h-0.5 after:flex-1 after:bg-linear-to-r after:from-ink after:to-transparent after:opacity-30 after:content-['']">contact me</h2>
   <p class="mb-10 text-lg">email: ntytomg@gmail.com</p>
 
   <form bind:this={formElement} class="max-w-3xl" onsubmit={(event) => { event.preventDefault(); handleSubmit() }}>

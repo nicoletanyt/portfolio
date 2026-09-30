@@ -20,7 +20,7 @@
 
 <section id="about-me" class="relative scroll-mt-20 py-20 sm:py-24 lg:py-28">
     <h2
-        class="mb-10 flex items-center gap-4 text-4xl font-semibold tracking-[-0.04em] after:h-0.5 after:flex-1 after:bg-linear-to-r after:from-ink after:to-transparent after:opacity-30 after:content-[''] sm:text-5xl"
+        class="mb-10 flex items-center gap-4 after:h-0.5 after:flex-1 after:bg-linear-to-r after:from-ink after:to-transparent after:opacity-30 after:content-['']"
     >
         about me
     </h2>
@@ -58,7 +58,7 @@
         </p>
     </div>
 
-    <h3 class="my-10 text-2xl font-normal italic">~ education</h3>
+    <h3 class="my-10 italic">~ education</h3>
     <div class="divide-y divide-ink/15 border-y border-ink/15">
         {#each data.education as item (item.year)}
             <article
@@ -100,7 +100,7 @@
         {/each}
     </div>
 
-    <h3 class="my-10 text-2xl font-normal italic">~ experience</h3>
+    <h3 class="my-10 italic">~ experience</h3>
     <div class="divide-y divide-ink/15 border-y border-ink/15">
         {#each data.experience as item (`${item.company}-${item.year}`)}
             <article
