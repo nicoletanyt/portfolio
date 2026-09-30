@@ -2,37 +2,53 @@
     "projects": [
         {
             "name": "InSync",
-            "language": ".swift",
+            "tech": [
+                ".swift",
+                ".py",
+                "FastAPI",
+                ".rs",
+                "React",
+                "OpenShift"
+            ],
             "description": "AI-powered communication facilitator helping AAC users express themselves independently through personalised voices and communication support.",
-            "link": "https://www.businesstimes.com.sg/lifestyle/dell-innovatefest-2026-explores-ai-tech-solutions-persons-disabilities-live-independently",
-            "label": "Read Business Times Feature"
+            "caseStudy": "/projects/insync/",
+            "featured": true
         },
         {
             "name": "BeatDash",
-            "language": ".svelte",
-            "description": "A lightweight music player that combines Spotify and YouTube, letting you control everything without taking your hands off the keyboard. ",
-            "link": "https://github.com/nicoletanyt/beatdash",
-            "label": "View more on Github"
+            "tech": [
+                ".svelte",
+                ".ts",
+                ".rs",
+                "Tauri",
+                "Tailwind"
+            ],
+            "description": "Spotify + YouTube music player built for keyboard-first control.",
+            "link": "https://github.com/nicoletanyt/beatdash"
         },
         {
             "name": "SUSCITY",
-            "language": ".js",
-            "description": "SUSCITY is an educational game designed to help students visualise geography concepts through a city-building simulation and geography-related questions.",
-            "link": "https://sus-city.github.io/",
-            "label": "Play SUSCITY"
+            "tech": [
+                ".js"
+            ],
+            "description": "An educational city-building game that helps students visualise geography concepts.",
+            "link": "https://sus-city.github.io/"
         },
         {
             "name": "Graphs in Obsidian Plugin",
-            "language": ".react",
-            "description": "A plugin for the note-taking app Obsidian that lets you plot and include graphs and vectors in your notes for better visualisation.",
-            "link": "https://github.com/nicoletanyt/obsidian-plugin-graphs",
-            "label": "Check out the plugin"
+            "tech": [
+                ".ts",
+                "React"
+            ],
+            "description": "An Obsidian plugin for plotting graphs and vectors directly in your notes.",
+            "link": "https://github.com/nicoletanyt/obsidian-plugin-graphs"
         }
     ],
     "achievements": {
         "2026": [
             {
-                "name": "Edusave Merit Bursary (Polytechnic Year 1)",
+                "name": "Edusave Merit Bursary",
+                "subtitle": "Polytechnic Year 1",
                 "category": "academic"
             },
             {
@@ -40,25 +56,40 @@
                 "category": "coding"
             },
             {
-                "name": "Dell InnovateFest 2026: Polytechnic Champion Team",
-                "category": "coding"
+                "title": "Dell InnovateFest 2026",
+                "subtitle": "Polytechnic Champion Team",
+                "category": "coding",
+                "highlight": true,
+                "icon": "trophy",
+                "link": "https://www.businesstimes.com.sg/lifestyle/dell-innovatefest-2026-explores-ai-tech-solutions-persons-disabilities-live-independently",
+                "label": "Learn more"
             }
         ],
         "2025": [
             {
-                "name": "9 Distinctions in the Singapore-Cambridge General Certificate of Education Ordinary Level",
-                "category": "academic"
+                "title": "9 Distinctions in Singapore-Cambridge GCE O-Level",
+                "category": "academic",
+                "highlight": true,
+                "icon": "star"
+            },
+            {
+                "title": "DSTA Polytechnic Digital Scholarship",
+                "category": "academic",
+                "highlight": true,
+                "icon": "star"
             },
             {
                 "name": "PforSST Service Learning Award",
                 "category": "academic"
             },
             {
-                "name": "Module Prizes for Computing Mathematics and Programming 1 for Polytechnic Year 1, Semester 1 (Apr 2025)",
+                "title": "Module Prizes for Computing Mathematics and Programming 1",
+                "subtitle": "Polytechnic Year 1, Semester 1",
                 "category": "academic"
             },
             {
-                "name": "Director's List for Polytechnic Year 1, Semester 1 (Apr 2025) and Semester 2 (Oct 2025)",
+                "title": "Director's List",
+                "subtitle": "Polytechnic Year 1 · Semester 1 & 2",
                 "category": "academic"
             },
             {
@@ -68,7 +99,8 @@
         ],
         "2024": [
             {
-                "name": "2024 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 4)",
+                "title": "Edusave Scholarship (Independent Schools)",
+                "subtitle": "Awarded annually · 2021–2024",
                 "category": "academic"
             },
             {
@@ -88,8 +120,11 @@
                 "category": "coding"
             },
             {
-                "name": "National Olympiad in Informatics (NOI) 2024 Finals: Bronze",
-                "category": "coding"
+                "title": "National Olympiad in Informatics (NOI) 2024 Finals",
+                "subtitle": "Bronze",
+                "category": "coding",
+                "highlight": true,
+                "icon": "award"
             },
             {
                 "name": "Represented Singapore at iDEX 2024 organised by ACS(I)",
@@ -156,10 +191,6 @@
             {
                 "name": "First Lego League (FLL) 2023 - 2024 (Masterpiece)",
                 "category": "robotics"
-            },
-            {
-                "name": "2023 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 3)",
-                "category": "academic"
             }
         ],
         "2022": [
@@ -206,10 +237,6 @@
             {
                 "name": "First Lego League (FLL) 2022 - 2023 (Super Powered)",
                 "category": "robotics"
-            },
-            {
-                "name": "2022 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 2)",
-                "category": "academic"
             }
         ],
         "2021": [
@@ -224,49 +251,18 @@
             {
                 "name": "First Lego League (FLL) 2021 (Cargo Connect)",
                 "category": "robotics"
-            },
-            {
-                "name": "2021 Edusave Scholarship (Independent Schools) Yearly Award (Secondary 1)",
-                "category": "academic"
             }
         ],
         "2020": [
             {
-                "name": "Edusave Scholarship 2020 (Primary 6)",
+                "title": "Edusave Scholarship",
+                "subtitle": "Awarded annually · 2015–2020",
                 "category": "academic"
             }
         ],
         "2019": [
             {
-                "name": "Edusave Scholarship 2019 (Primary 5)",
-                "category": "academic"
-            },
-            {
-                "name": "Edusave Award for Achievement, Good Leadership and Service (EAGLES) 2019",
-                "category": "academic"
-            }
-        ],
-        "2018": [
-            {
-                "name": "Edusave Scholarship 2018 (Primary 4)",
-                "category": "academic"
-            }
-        ],
-        "2017": [
-            {
-                "name": "Edusave Scholarship 2017 (Primary 3)",
-                "category": "academic"
-            }
-        ],
-        "2016": [
-            {
-                "name": "Edusave Scholarship 2016 (Primary 2)",
-                "category": "academic"
-            }
-        ],
-        "2015": [
-            {
-                "name": "Edusave Scholarship 2015 (Primary 1)",
+                "name": "Edusave Award for Achievement, Good Leadership and Service (EAGLES)",
                 "category": "academic"
             }
         ]
@@ -324,98 +320,103 @@
             }
         ]
     },
-    "word-cloud": {
-        "adaptable": {
-            "size": 4,
-            "x": 69,
-            "y": 73,
-            "rotation": 0
+    "word-cloud": [
+        {
+            "text": "Building Things",
+            "emphasis": "high",
+            "description": "I want to keep exploring different areas of technology and build things that can make a positive difference in people’s lives."
         },
-        "curious": {
-            "size": 3,
-            "x": 71,
-            "y": 31,
-            "rotation": 0
+        {
+            "text": "Curiosity",
+            "emphasis": "medium"
         },
-        "independent": {
-            "size": 2,
-            "x": 116,
-            "y": 0,
-            "rotation": 0
+        {
+            "text": "AI",
+            "emphasis": "high",
+            "description": "I want AI to do the tedious stuff, not the thinking for us. More time to learn, create, and do the things that make us happy."
         },
-        "math": {
-            "size": 3,
-            "x": 204,
-            "y": 41,
-            "rotation": 0
+        {
+            "text": "TypeScript",
+            "emphasis": "low"
         },
-        "books": {
-            "size": 1.8,
-            "x": 275,
-            "y": 40,
-            "rotation": -90
+        {
+            "text": "Vim",
+            "emphasis": "medium",
+            "description": "My productivity game-changer."
         },
-        "music": {
-            "size": 3,
-            "x": 272,
-            "y": 110,
-            "rotation": -90
+        {
+            "text": "Adaptable",
+            "emphasis": "medium"
         },
-        "committed": {
-            "size": 2.4,
-            "x": 155,
-            "y": 131,
-            "rotation": 0
+        {
+            "text": "Python",
+            "emphasis": "low"
         },
-        "open-minded": {
-            "size": 1.8,
-            "x": 193,
-            "y": 166,
-            "rotation": 0
+        {
+            "text": "Svelte",
+            "emphasis": "medium",
+            "description": "My go-to for web development."
         },
-        "vim": {
-            "size": 2.4,
-            "x": 75,
-            "y": 169,
-            "rotation": 0
+        {
+            "text": "Independent",
+            "emphasis": "medium"
         },
-        "coding": {
-            "size": 2.4,
-            "x": 40,
-            "y": 131,
-            "rotation": 0
+        {
+            "text": "Reading",
+            "emphasis": "low",
+            "description": "A little window into someone else's perspective, and sometimes a new way of seeing my own."
         },
-        "creative": {
-            "size": 2.4,
-            "x": -30,
-            "y": 99,
-            "rotation": 90
+        {
+            "text": "Milk Tea",
+            "emphasis": "low",
+            "description": "Can't live without my Teh C Peng."
         },
-        "guitar": {
-            "size": 1.8,
-            "x": 50,
-            "y": 68,
-            "rotation": 0
-        },
-        "coffee": {
-            "size": 1.8,
-            "x": 49,
-            "y": 10,
-            "rotation": 90
+        {
+            "text": "Math",
+            "emphasis": "high",
+            "description": "Give me a problem to solve and I’m happy. Calculus just happens to be my favourite kind."
         }
-    },
+    ],
     "education": [
         {
             "year": 2015,
-            "school": "Pei Tong Primary School"
+            "endYear": 2020,
+            "school": "Pei Tong Primary School",
+            "logo": "pei-tong"
         },
         {
             "year": 2021,
-            "school": "School of Science and Technology, Singapore"
+            "endYear": 2024,
+            "school": "School of Science and Technology, Singapore",
+            "logo": "sst"
         },
         {
             "year": 2025,
-            "school": "Ngee Ann Polytechnic (Information Technology)"
+            "endYear": 2028,
+            "school": "Ngee Ann Polytechnic",
+            "details": "Diploma in Information Technology with Second Major in Business",
+            "cgpa": "3.975",
+            "logo": "ngee-ann",
+            "current": true
+        }
+    ],
+    "experience": [
+        {
+            "year": 2024,
+            "month": "Dec",
+            "endYear": 2025,
+            "endMonth": "Mar",
+            "role": "Part-Time Logistics Assistant",
+            "company": "Kinokuniya",
+            "logo": "kinokuniya"
+        },
+        {
+            "year": 2025,
+            "month": "Oct",
+            "role": "Teacher",
+            "company": "LCCL Coding Academy",
+            "logo": "lccl",
+            "current": true
         }
     ]
 }
