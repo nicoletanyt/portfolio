@@ -90,7 +90,7 @@
         >
             {#each words as word, index (word.text)}
                 <div
-                    class={`relative flex items-center justify-center ${activeWord === word.text ? "z-20" : ""} ${flowClasses[index]}`}
+                    class={`relative flex items-center justify-center ${activeWord === word.text ? "z-[100]" : ""} ${flowClasses[index]}`}
                 >
                     {#if word.description}
                         <button
@@ -116,7 +116,7 @@
                         <span
                             id={`word-tooltip-${index}`}
                             role="tooltip"
-                            class={`pointer-events-none absolute top-[calc(100%+0.65rem)] w-[min(18rem,calc(100vw-3rem))] rounded-lg border border-ink/10 bg-paper px-3.5 py-2.5 text-left text-sm leading-6 font-normal tracking-normal text-ink shadow-[0_8px_24px_rgb(21_39_142_/_0.12)] transition-[opacity,translate] duration-200 ${index >= words.length - 3 ? "right-0" : "left-1/2 -translate-x-1/2"} ${activeWord === word.text ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"}`}
+                                class={`pointer-events-none absolute top-[calc(100%+0.65rem)] z-[110] w-[min(18rem,calc(100vw-3rem))] rounded-lg border border-ink/10 bg-paper px-3.5 py-2.5 text-left text-sm leading-6 font-normal tracking-normal text-ink shadow-[0_8px_24px_rgb(21_39_142_/_0.12)] transition-[opacity,translate] duration-200 ${index >= words.length - 3 ? "right-0" : "left-1/2 -translate-x-1/2"} ${activeWord === word.text ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"}`}
                         >
                             {word.description}
                         </span>
