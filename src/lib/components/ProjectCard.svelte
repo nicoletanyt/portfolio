@@ -1,4 +1,5 @@
 <script>
+    import { resolve } from '$app/paths'
     import { ArrowUpRight, Star, Trophy } from "@lucide/svelte";
     import suscity from "../../assets/projects/suscity.png";
     import graphs from "../../assets/projects/graphs-plugin.png";
@@ -48,7 +49,7 @@
                 {project.name}
             </h3>
             <a
-                href={project.caseStudy || project.link}
+                href={project.caseStudy ? resolve('/projects/insync') : project.link}
                 target={project.caseStudy ? undefined : "_blank"}
                 rel="external noreferrer"
                 aria-label={`Open ${project.name}`}

@@ -1,4 +1,5 @@
 <script>
+  import { asset } from '$app/paths'
   import { Menu, X } from '@lucide/svelte'
 
   let { activePage = 'homepage' } = $props()
@@ -15,7 +16,7 @@
 
 <div class="fixed top-0 right-0 left-0 z-50 flex h-16 items-center justify-between border-b border-ink/10 bg-paper/90 px-5 backdrop-blur-md lg:hidden">
   <a href="#homepage" class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink" aria-label="Home" onclick={() => (open = false)}>
-    <img src="/favicon.svg" alt="" class="h-9 w-9" />
+    <img src={asset('/favicon.svg')} alt="" class="h-9 w-9" />
     <span class="font-semibold tracking-tight">nicole tan</span>
   </a>
   <button
@@ -52,7 +53,7 @@
     </button>
 
     <a href="#homepage" class="grid w-fit place-items-center self-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-paper" aria-label="Home" onclick={() => (open = false)}>
-      <img src="/favicon.svg" alt="" class="h-14 w-14" />
+      <img src={asset('/favicon.svg')} alt="" class="h-14 w-14" />
     </a>
 
     <div class="flex flex-1 flex-col justify-evenly py-5 lg:py-10">

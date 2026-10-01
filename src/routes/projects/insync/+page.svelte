@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { resolve } from "$app/paths";
+    import { asset, resolve } from "$app/paths";
     import {
         ArrowDown,
         ArrowDownRight,
@@ -47,7 +47,7 @@
             >Nt</a
         >
         <a
-            href="/#projects"
+            href={`${resolve('/')}#projects`}
             rel="external"
             class="inline-flex items-center gap-2 text-sm font-semibold text-ink/75 transition-colors hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink sm:text-base"
         >
@@ -561,11 +561,11 @@
             aria-label="Nt home"
             class="grid w-fit place-items-center self-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-paper"
         >
-            <img src="/favicon.svg" alt="" class="h-14 w-14" />
+            <img src={asset('/favicon.svg')} alt="" class="h-14 w-14" />
         </a>
         <div class="flex flex-1 flex-col justify-evenly py-5 lg:py-10">
             <a
-                href="/#projects"
+                href={`${resolve('/')}#projects`}
                 rel="external"
                 class="relative w-fit self-center text-[1.1rem] text-paper underline underline-offset-[0.35rem] transition-transform duration-200 hover:translate-x-[0.35rem] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-paper"
             >
